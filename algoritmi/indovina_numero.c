@@ -1,8 +1,8 @@
 /*
  * INDOVINA NUMERO
- * Il computer pensa ad un numero. L'utente deve cercare di indovinarlo.
+ * Il computer genera un numero casuale. L'utente dovrá cercare di indovinarlo.
  * @author Andrea Vallorani
- * @version 1.0.0 08/05/2014 17:27
+ * @version 1.0.1 07/01/2017
  */
 #include <stdio.h>
 #include <time.h>
