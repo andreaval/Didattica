@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form HTML</title>
+        <style>
+        #fe{border-collapse:collapse;width:100%;margin:0 0 10em}
+        #fe td{border-bottom:1px solid #ccc;padding:.5em 0}
+        #fe th{text-align:left;background:#eee}
+        </style>
+    </head>
+    <body>
+        <h1>Form HTML</h1>
+        <h2>Tag base</h2>
+        <ul>
+            <li>FORM
+            <li>INPUT
+            <li>SELECT
+            <li>OPTION
+            <li>TEXTAREA
+            <li>BUTTON
+        </ul>
+        <h2>Tag FORM</h2>
+        <pre>&lt;form method="get" action="page.html"&gt; ... &lt;/form&gt;</pre>
+        <i>method</i>: GET , POST<br>
+        <i>action</i>: URL_pagina_web
+        <h2>Elementi di un form</h2>
+        <form>
+        <table id="fe">
+            <tr>
+                <th></th><th></th><th></th><th>Html</th><th>Attributi</th>
+            </tr>
+            <tr>
+                <td>1.</td><td>TEXTBOX</td><td><input type="text"></td><td><pre>&lt;input type="text" name="testo"&gt;</pre></td><td><strong>name</strong>, value, size, maxlength,<br> required, placeholder</td>
+            </tr>
+            <tr>
+                <td>2.</td><td>RADIO BUTTON</td><td><input type="radio" name="sex"> M<br><input type="radio" name="sex"> F</td><td><pre>&lt;input type="radio" name="sex" value="m"&gt; M<br>&lt;input type="radio" name="sex" value="f"&gt; F</pre></td><td><strong>name</strong>, <strong>value</strong>, checked, required</td>
+            </tr>
+            <tr>
+                <td>3.</td><td>CHECKBOX</td><td><input type="checkbox" name="hobbies"> Calcio<br><input type="checkbox" name="hobbies"> Pallavolo<br><input type="checkbox" name="hobbies"> Tennis</td><td><pre>&lt;input type="checkbox" name="sport" value="calcio"&gt; Calcio<br>&lt;input type="checkbox" name="sport" value="tennis"&gt; Tennis<br>&lt;input type="checkbox" name="sport" value="pallavolo"&gt; Pallavolo</pre></td><td><strong>name</strong>, <strong>value</strong>, checked, required</td>
+            </tr>
+            <tr>
+                <td>4.</td><td>SELECT</td><td><select name="nazione" required><option value=""></option><option value="it">Italia</option><option value="fr">Francia</option><option value="de">Germania</option></select></td><td>
+                    <pre>&lt;select name="nazione"&gt;
+    &lt;option value=""&gt;&lt;/option&gt;
+    &lt;option value="it"&gt;Italia&lt;/option&gt;
+    &lt;option value="fr"&gt;Francia&lt;/option&gt;
+    &lt;option value="de"&gt;Germania&lt;/option&gt;
+&lt;/select&gt;</pre></td><td><i>select</i>: <strong>name</strong>, size, required<br><i>option</i>: <strong>value</strong>, selected</td>
+            </tr>
+            <tr>
+                <td>5.</td><td>TEXTAREA</td><td><textarea cols="30" rows="5">testo predefinito</textarea></td><td><pre>&lt;textarea name="commento" cols="30" rows="5"&gt;
+    testo predefinito
+&lt;/textarea&gt;</pre></td><td><strong>name</strong>, cols, rows, required</td>
+            </tr>
+            <tr>
+                <td>6.</td><td>BUTTON</td><td><button type="submit">INVIA</button></td><td><pre>&lt;button type="submit" name="bt"&gt;INVIA&lt;/button&gt;</pre></td><td><strong>name</strong>, value</td>
+            </tr>
+            <tr>
+                <td>7.</td><td>PASSWORD</td><td><input type="password"></td><td><pre>&lt;input type="password" name="pwd"&gt;</pre></td><td><strong>name</strong>, required</td>
+            </tr>
+        </table>
+        </form>
+        <!--<h2>Esempi</h2>
+        <a href="http://www.trenitalia.com/">www.trenitalia.com</a> | <a href="http://facebook.com">Facebook</a> -->
+    </body>
+</html>
