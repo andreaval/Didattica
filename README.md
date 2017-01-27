@@ -1,2 +1,2 @@
 # Didattica
-Raccolta di algoritmi e di codice per il testing di vari linguaggi di programmazione
+Raccolta, per uso didattico, di algoritmi e di tecniche di programmazione
