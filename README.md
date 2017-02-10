@@ -1,2 +1,2 @@
 # Didattica
-Raccolta, per uso didattico, di algoritmi e di tecniche di programmazione
+Raccolta, per uso didattico, di algoritmi e tecniche di programmazione
