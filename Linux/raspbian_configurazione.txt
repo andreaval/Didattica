@@ -1,0 +1,51 @@
+#versione sistema operativo
+uname -a 
+
+#riavvio server
+shutdown -r now
+
+#aggiornamento updates
+sudo apt-get update
+
+#applicazione aggiornamenti
+sudo apt-get upgrade
+sudo apt-get dist-upgrade 
+
+#pulizia vecchi aggiornamenti
+sudo apt-get autoremove
+sudo apt-get autoclean
+
+#cambio password
+passwd
+sudo passwd root
+
+#nuovo utente
+adduser nome_utente
+
+#configurare proxy per gli aggiornamenti
+sudo nano /etc/apt/apt.conf.d/10proxy 
+
+#aggiungere all’interno del file la seguente riga:
+Acquire::http::Proxy "http://172.16.100.9:8080/";
+
+#installare firefox
+sudo apt-get install firefox-esr
+
+#installare apache2
+sudo apt-get install apache2
+
+#installare php
+sudo apt-get install php5
+sudo apt-get install php5-mysql
+
+#installare mysql
+sudo apt-get install mysql-server
+
+#server ntp
+sudo apt-get install ntp ntpd chkconfig
+sudo service ntp restart
+sudo chkconfig ntp on
+
+#controllo servizi avviati al boot
+sudo service --status-all
+
