@@ -1,0 +1,13 @@
+##LINUX CENTOS
+
+nano /etc/sysconfig/network
+
+#cambiare la variabile HOSTNAME
+HOSTNAME=myserver.domain.com
+
+#eseguire il comando hostname
+hostname hostname.domain.com
+
+#riavviare la scheda di rete
+/etc/init.d/network restart
+
