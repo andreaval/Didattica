@@ -31,3 +31,7 @@
 # Debug files
 *.dSYM/
 *.su
+/Java/GeneratoreFinestre/nbproject/private/
+/Java/GeneratoreFinestre/build/
+/Java/AreaPerimetroRettangolo/build/
+/Java/AreaPerimetroRettangolo/nbproject/private/
