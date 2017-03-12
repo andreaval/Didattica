@@ -1,37 +1,34 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Programma che genera N finestre in base all'input fornito dall'utente
+ * tramite console.
  */
-package vallorani.test;
+package org.vallorani.test;
 import java.util.*;
 
 /**
- *
- * @author andrea
+ * Classe principale
+ * @author Andrea Vallorani
  */
-public class Finestre1 {
+public class GeneratoreFinestre {
 
     /**
-     * @param args the command line arguments
+     * Metodo iniziale del programma
      */
     public static void main(String[] args) {
         int tot;
+        System.out.print("Quante finestre vuoi visualizzare? ");
         Scanner in = new Scanner(System.in);
-        tot=in.nextInt();
-        int left=10;
-        int top=0;
+        tot = in.nextInt();
+        int left = 100;
+        int top = 100;
         for(int i=1;i<=tot;i++){
             Window w = new Window();
-            w.setVisible(true);
             w.setLocation(left, top);
-            w.testo.setText("finestra "+i+" ("+(w.getLocation().x)+"x"+(w.getLocation().y)+")");
-            if(i%4==0){
-                left=10;
-                top+=240;
-            }
-            else left+=260;
+            w.setTitle("Finestra "+i);
+            w.testo.setText("posizione x: "+(w.getLocation().x)+", y:"+(w.getLocation().y)+"");
+            w.setVisible(true);
+            left += 30;
+            top += 30;
         }
     }
-    
 }

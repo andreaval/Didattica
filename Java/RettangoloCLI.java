@@ -1,11 +1,11 @@
 /**
- * Calcolo area e perimetro di un rettangolo
+ * Software CLI per calcolare area e perimetro di un rettangolo
  * @version 1.0.0 2017-01-11 17:16
  * @author Andrea Vallorani <andrea@vallorani.org>
  */
 import java.util.*;
 
-class AreaPerimetroRettangolo {
+class RettangoloCLI {
 
     public static void main(String[] args) {
         int b,h,a,p;
