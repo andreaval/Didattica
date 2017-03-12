@@ -20,9 +20,9 @@ int main(){
         
         //ricerca posizione tramite ricerca binaria
         min = 0;
-        trovato  = 0;
-        max = len;
-        while(max>min && !trovato){
+        trovato = 0;
+        max = len-1;
+        while(min<=max && !trovato){
             centro = (min+max)/2;
             if(numbers[centro]==n){
                 trovato = 1;
@@ -40,8 +40,7 @@ int main(){
             pos = centro;
         } 
         else{
-            if(numbers[min]>n || min>=len) pos = min;
-            else pos = min+1;
+            pos = min;
         }
         printf("pos: %d\n",pos);
         
