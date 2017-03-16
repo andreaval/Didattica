@@ -1,22 +1,19 @@
 package org.vallorani.test;
 
 /**
- * Classe quadrato
+ * Classe Quadrato
+ *
  * @author Andrea Vallorani
  */
-public class Quadrato {
-    
-    private double lato;
-    
-    public Quadrato(double l){
-        this.lato = l;
-    }
-    
-    public double calcolaArea(){
-        return this.lato*this.lato;
-    }
-    
-    public double calcolaPerimetro(){
-        return this.lato*4;
+public class Quadrato extends Rettangolo {
+
+    /**
+     * Metodo costruttore
+     *
+     * @param l Misura del lato
+     */
+    public Quadrato(double l) {
+        //invoco il costruttore della classe padre il quale richiede 2 parametri
+        super(l, l);
     }
 }
