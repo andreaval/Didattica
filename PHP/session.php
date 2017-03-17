@@ -12,7 +12,7 @@ session_name('myapp');
 //il dominio di validità del cookie
 //secure (solo connessioni sicure)
 //httponly (non accessibile da JS)
-session_set_cookie_params(3600,'/','localhost',false,true);
+session_set_cookie_params(0,'/','localhost',false,true);
 //creo o ripristino sessione
 session_start();
 
