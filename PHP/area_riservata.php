@@ -2,7 +2,7 @@
 /**
  * Esempio di pagina in cui è richiesta l'autenticazione dell'utente
  * @author Andrea Vallorani
- * @version 1.0 2017-03-17 19:50
+ * @version 1.0 2017-03-17 19:51
  */
 
 //in ogni pagina riservata si deve provvedere, come prima cosa, all'apertura della sessione
