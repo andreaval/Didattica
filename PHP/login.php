@@ -2,7 +2,7 @@
 /**
  * Esempio di pagina di autenticazione
  * @author Andrea Vallorani
- * @version 1.0 2017-03-17 21:30
+ * @version 1.0 2017-03-17 21:31
  */
 
 //apro la sessione (molto probabilmente sarà una nuova sessione)
