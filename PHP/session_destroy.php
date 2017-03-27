@@ -2,7 +2,7 @@
 /**
  * Esempio di chiusura di una sessione web in PHP
  * @author Andrea Vallorani
- * @version 1.0 2017-03-27 19:50
+ * @version 1.0 2017-03-27 19:51
  */
  
 //imposto il nome della sessione
