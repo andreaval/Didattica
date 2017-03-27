@@ -2,7 +2,7 @@
 /**
  * Esempio di apertura di una sessione web in PHP
  * @author Andrea Vallorani
- * @version 1.0 2017-03-17 18:51
+ * @version 1.0 2017-03-17 18:52
  */
  
 //imposto il nome della sessione (che sarà anche il nome del cookie salvato nel browser)
