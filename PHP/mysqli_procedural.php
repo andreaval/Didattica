@@ -1,4 +1,9 @@
 <?php
+/**
+ * Recupero di dati da un DB di tipo Mysql
+ * @author Andrea Vallorani
+ * @version 1.0 2017-01-27 18:32
+ */
 $conn = @mysqli_connect('127.0.0.1','myuser','mypass','prova1');
 if (!$conn) {
     echo 'Errore connessione: '.mysqli_connect_error()."\n";
