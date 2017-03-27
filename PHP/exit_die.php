@@ -1,3 +1,10 @@
+<?php
+/**
+ * Comandi per interrompere l'esecuzione di uno script
+ * @author Andrea Vallorani
+ * @version 1.0 2017-02-13 18:32
+ */
+?>
 <!DOCTYPE html>
 <html>
 <head>
