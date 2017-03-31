@@ -28,9 +28,14 @@ if(!empty($_POST['username'])){
     if($u && $p=='1234'){
         $_SESSION['username'] = $u;
         $_SESSION['login_time'] = time();
-        if($_POST['permanent']){
+        if($_POST['persistent']){
             //aggiorno la scadenza del cookie alla data odierna+30 giorni
             setcookie(session_name(),session_id(),time()+2592000,'/');
+            
+            //alternativa migliore per aumentare la durata della sessione:
+            //session_set_cookie_params(2592000,'/','localhost',false,true);
+            //ini_set('session.gc_maxlifetime',2592000);
+            //session_regenerate_id(true);
         }
         header('Location: '.$pagina_dopo_login);
         exit;
@@ -53,7 +58,7 @@ if(!empty($_POST['username'])){
             ?>
             <input type="text" name="username" required placeholder="Nome utente (qualsiasi)">
             <input type="password" name="password" required placeholder="Password (1234)">
-            <input type="checkbox" name="permanent" value="1"> Login permanente
+            <input type="checkbox" name="persistent" value="1"> Login permanente
             <button type="submit">Login</button>
         </form>
     </body>
