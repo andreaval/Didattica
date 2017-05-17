@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Generatori di numeri casuali</title>
+        <style>
+            .numero{font-size:50px;width:31%;margin:3px;line-height:200px;border:1px solid #ccc;float:left}
+            body{text-align:center}
+            ol{list-sty}
+        </style>
+        <script type="text/javascript">
+            function genera(){
+                var numeri = new Array(3);
+                for(var i=0;i<3;i++){
+                    numeri[i] = Math.floor(Math.random()*100);
+                }
+                document.getElementById('n1').innerText = numeri[0];
+                document.getElementById('n2').innerText = numeri[1];
+                document.getElementById('n3').innerText = numeri[2];
+                document.getElementById('storico').innerHTML += "<li> | "+numeri[0]+" | "+numeri[1]+" | "+numeri[2]+" |</li>";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Generatore di 3 numeri casuali compresi tra 0 e 100</h1>
+        <div id="n1" class="numero">?</div>
+        <div id="n2" class="numero">?</div>
+        <div id="n3" class="numero">?</div>
+        <button onclick="genera()">GENERA NUMERI</button>
+        <h2>Storico estrazioni</h2>
+        <ol id="storico"></ol>
+    </body>
+</html>
