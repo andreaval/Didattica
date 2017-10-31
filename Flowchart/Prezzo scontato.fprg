@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value="Calcolo prezzo scontatto (senza controllo input)"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v.1 - 24/10/2017 23:23"/>
+        <attribute name="saved" value="2017-10-24 11:23:49 PM"/>
+        <attribute name="created" value="YW5kcmVhOyBBTkRSRUEzNjU2OyAyMDE3LTEwLTI0OyAxMToxNTo1NyBQTTsgMjYzNQ=="/>
+        <attribute name="edited" value="YW5kcmVhOyBBTkRSRUEzNjU2OyAyMDE3LTEwLTI0OyAxMToyMzo0OSBQTTsgMjYzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Calcolo prezzo scontato (senza controllo input)"/>
+            <declare name="PRICE, PERC, SALE" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci un prezzo&quot;"/>
+            <input variable="PRICE"/>
+            <output expression="&quot;Inserisci lo sconto (in %)&quot;"/>
+            <input variable="PERC"/>
+            <assign variable="SALE" expression="PRICE/100*PERC"/>
+            <assign variable="PRICE" expression="PRICE - SALE"/>
+            <output expression="&quot;Prezzo scontato = &quot; &amp; PRICE"/>
+        </body>
+    </function>
+</flowgorithm>

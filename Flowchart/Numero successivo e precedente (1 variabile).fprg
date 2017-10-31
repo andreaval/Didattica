@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value="Numero successivo e precedente (1 variabile)"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v.1 - 24/10/2017 23:12"/>
+        <attribute name="saved" value="2017-10-24 11:13:59 PM"/>
+        <attribute name="created" value="YW5kcmVhOyBBTkRSRUEzNjU2OyAyMDE3LTEwLTI0OyAxMTowMzowOCBQTTsgMjYyOA=="/>
+        <attribute name="edited" value="YW5kcmVhOyBBTkRSRUEzNjU2OyAyMDE3LTEwLTI0OyAxMToxMzo1OSBQTTsgMjYzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Numero successivo e precedente con utilizzo di una variabile"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci un numero intero&quot;"/>
+            <input variable="N"/>
+            <assign variable="N" expression="N-1"/>
+            <output expression="&quot;Il precedente &#232; &quot; &amp; N"/>
+            <assign variable="N" expression="N+2"/>
+            <output expression="&quot;Il successivo &#232; &quot; &amp; N"/>
+        </body>
+    </function>
+</flowgorithm>
