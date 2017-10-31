@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value="Media di N numeri"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1 31/10/2017 21:50"/>
+        <attribute name="saved" value="2017-10-31 09:47:52 PM"/>
+        <attribute name="created" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTAtMzE7IDA5OjQwOjQzIFBNOyAyNjY5"/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTAtMzE7IDA5OjQ3OjUyIFBNOyAyNjc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Media di N numeri reali"/>
+            <declare name="TOT, I" type="Integer" array="False" size=""/>
+            <declare name="AVG, N, SUM" type="Real" array="False" size=""/>
+            <output expression="&quot;Di quanti numeri vuoi fare la media?&quot;"/>
+            <input variable="TOT"/>
+            <assign variable="SUM" expression="0"/>
+            <for variable="I" start="1" end="TOT" direction="inc" step="1">
+                <output expression="&quot;Inserisci &quot;&amp;I&amp;&quot;&#176; numero&quot;"/>
+                <input variable="N"/>
+                <assign variable="SUM" expression="SUM+N"/>
+            </for>
+            <assign variable="AVG" expression="SUM/TOT"/>
+            <output expression="&quot;La media &#232; &quot;&amp;AVG"/>
+        </body>
+    </function>
+</flowgorithm>
