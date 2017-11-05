@@ -3,10 +3,10 @@
     <attributes>
         <attribute name="name" value="Generato punti del piano cartesiano (Q1-Q3)"/>
         <attribute name="authors" value="Andrea Vallorani"/>
-        <attribute name="about" value="v1"/>
-        <attribute name="saved" value="2017-11-05 05.13.03 "/>
+        <attribute name="about" value="v2"/>
+        <attribute name="saved" value="2017-11-05 06.48.38 "/>
         <attribute name="created" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMS0wNTsgMDQuNDEuMzkgOyAyODE0"/>
-        <attribute name="edited" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMS0wNTsgMDUuMTMuMDMgOyAyODA1"/>
+        <attribute name="edited" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMS0wNTsgMDYuNDguMzggOyAyODIy"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -15,21 +15,12 @@
             <declare name="N, I, X, Y" type="Integer" array="False" size=""/>
             <output expression="&quot;Numero di punti da generare&quot;"/>
             <input variable="N"/>
-            <assign variable="X" expression="0"/>
-            <assign variable="Y" expression="0"/>
-            <for variable="I" start="1" end="N/2" direction="inc" step="1">
+            <assign variable="X" expression="-N/2"/>
+            <assign variable="Y" expression="X"/>
+            <while expression="X&lt;(N/2)">
+                <output expression="&quot;(&quot; &amp; X &amp; &quot;,&quot; &amp; Y &amp; &quot;)&quot;"/>
                 <assign variable="X" expression="X + 1"/>
                 <assign variable="Y" expression="Y + 1"/>
-                <output expression="&quot;(&quot; &amp; X &amp; &quot;,&quot; &amp; Y &amp; &quot;)&quot;"/>
-            </for>
-            <assign variable="I" expression="X"/>
-            <assign variable="X" expression="0"/>
-            <assign variable="Y" expression="0"/>
-            <while expression="I&lt;N">
-                <assign variable="X" expression="X - 1"/>
-                <assign variable="Y" expression="Y - 1"/>
-                <output expression="&quot;(&quot; &amp; X &amp; &quot;,&quot; &amp; Y &amp; &quot;)&quot;"/>
-                <assign variable="I" expression="I+1"/>
             </while>
         </body>
     </function>
