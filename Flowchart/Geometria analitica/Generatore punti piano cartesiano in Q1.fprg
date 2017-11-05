@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value="Generato punti del piano cartesiano (Q1)"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-05 05.06.55 "/>
+        <attribute name="created" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMS0wNTsgMDQuNDEuMzkgOyAyODE0"/>
+        <attribute name="edited" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMS0wNTsgMDUuMDYuNTUgOyAyODE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Generazione di N punti del Piano Cartesiano (del 1&#176; quadrante) "/>
+            <declare name="N, I, X, Y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Numero di punti da generare&quot;"/>
+            <input variable="N"/>
+            <assign variable="X" expression="0"/>
+            <assign variable="Y" expression="0"/>
+            <for variable="I" start="1" end="N" direction="inc" step="1">
+                <assign variable="X" expression="X + 1"/>
+                <assign variable="Y" expression="Y + 1"/>
+                <output expression="&quot;(&quot; &amp; X &amp; &quot;,&quot; &amp; Y &amp; &quot;)&quot;"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
