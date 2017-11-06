@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Determinare il tipo di retta (equazione in forma esplicita)"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-06 05:24:22 PM"/>
+        <attribute name="created" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMS0wNTsgMDUuMTkuNTggOyAyODIx"/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMDY7IDA1OjI0OjIyIFBNOyAyNjY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Determinare il tipo di retta (equazione in forma esplicita y=mx+q)"/>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Coefficiente X&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Coefficiente Y&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Termine noto&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a==0">
+                <then>
+                    <if expression="b==0">
+                        <then>
+                            <output expression="&quot;Non &#232; una retta&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Retta orizzontale&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b==0">
+                        <then>
+                            <output expression="&quot;Retta verticale&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a&gt;0">
+                                <then>
+                                    <output expression="&quot;Retta obliqua crescente&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Retta obliqua decrescente&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

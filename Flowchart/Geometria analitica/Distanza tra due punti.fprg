@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
-<flowgorithm fileversion="2.6">
+<flowgorithm fileversion="2.9">
     <attributes>
-        <attribute name="name" value="Distanza tra due punti"/>
+        <attribute name="name" value="Distanza tra due punti del Piano Cartesiano"/>
         <attribute name="authors" value="Andrea Vallorani"/>
-        <attribute name="about" value="v1"/>
-        <attribute name="saved" value="2017-11-02 07:51:25 PM"/>
+        <attribute name="about" value="v2"/>
+        <attribute name="saved" value="2017-11-06 05:19:42 PM"/>
         <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTAyOyAwNzozMTo0NSBQTTsgMjkyNA=="/>
-        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTAyOyAwNzo1MToyNSBQTTsgMjkyNA=="/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMDY7IDA1OjE5OjQyIFBNOyAyNjcz"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <comment text="Distanza tra due punti del piano cartesiano"/>
-            <declare name="xA, yA, xB, yB, DISTANCE" type="Real" array="False" size=""/>
-            <output expression="&quot;Inserisci coordinata X del punto A (xA):&quot;"/>
-            <input variable="xA"/>
-            <output expression="&quot;Inserisci coordinata Y del punto A (yA):&quot;"/>
-            <input variable="yA"/>
-            <output expression="&quot;Inserisci coordinata X del punto B (xB):&quot;"/>
-            <input variable="xB"/>
-            <output expression="&quot;Inserisci coordinata Y del punto B (yB):&quot;"/>
-            <input variable="yB"/>
-            <assign variable="DISTANCE" expression="SQRT((xb-xa)^2+(yb-ya)^2)"/>
-            <output expression="&quot;La distanza tra il punto A(&quot;&amp;xA&amp;&quot;,&quot;&amp;yA&amp;&quot;) e il punto B(&quot;&amp;xB&amp;&quot;,&quot;&amp;yB&amp;&quot;) &#232; &quot;&amp;DISTANCE"/>
+            <declare name="x0, y0, x1, y1, DISTANCE" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci coordinata X del punto A:&quot;" newline="True"/>
+            <input variable="x0"/>
+            <output expression="&quot;Inserisci coordinata Y del punto A:&quot;" newline="True"/>
+            <input variable="y0"/>
+            <output expression="&quot;Inserisci coordinata X del punto B:&quot;" newline="True"/>
+            <input variable="x1"/>
+            <output expression="&quot;Inserisci coordinata Y del punto B:&quot;" newline="True"/>
+            <input variable="y1"/>
+            <assign variable="DISTANCE" expression="SQRT((x1-x0)^2+(y1-y0)^2)"/>
+            <output expression="&quot;La distanza tra il punto A(&quot;&amp;x0&amp;&quot;,&quot;&amp;y0&amp;&quot;) e il punto B(&quot;&amp;x1&amp;&quot;,&quot;&amp;y1&amp;&quot;) &#232; &quot;&amp;DISTANCE" newline="True"/>
         </body>
     </function>
 </flowgorithm>

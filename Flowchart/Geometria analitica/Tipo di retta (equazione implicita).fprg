@@ -1,48 +1,48 @@
 <?xml version="1.0"?>
-<flowgorithm fileversion="2.6">
+<flowgorithm fileversion="2.9">
     <attributes>
-        <attribute name="name" value="Determinar eil tipo di retta del piano cartesiano"/>
+        <attribute name="name" value="Determinare il tipo di retta del piano (equazione in forma implicita)"/>
         <attribute name="authors" value="Andrea Vallorani"/>
-        <attribute name="about" value="v1"/>
-        <attribute name="saved" value="2017-11-05 05.49.50 "/>
+        <attribute name="about" value="v2"/>
+        <attribute name="saved" value="2017-11-06 05:25:55 PM"/>
         <attribute name="created" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMS0wNTsgMDUuMTkuNTggOyAyODIx"/>
-        <attribute name="edited" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMS0wNTsgMDUuNDkuNTAgOyAyODE2"/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMDY7IDA1OjI1OjU1IFBNOyAyNjc0"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <comment text="Determinare il tipo di retta del piano cartesiano"/>
+            <comment text="Determinare il tipo di retta (equazione in forma implicita ax+by+c=0)"/>
             <declare name="a, b, c, m" type="Real" array="False" size=""/>
-            <output expression="&quot;Coefficiente X&quot;"/>
+            <output expression="&quot;Coefficiente X&quot;" newline="True"/>
             <input variable="a"/>
-            <output expression="&quot;Coefficiente Y&quot;"/>
+            <output expression="&quot;Coefficiente Y&quot;" newline="True"/>
             <input variable="b"/>
-            <output expression="&quot;Termine noto&quot;"/>
+            <output expression="&quot;Termine noto&quot;" newline="True"/>
             <input variable="c"/>
             <if expression="a==0">
                 <then>
                     <if expression="b==0">
                         <then>
-                            <output expression="&quot;Non &#232; una retta&quot;"/>
+                            <output expression="&quot;Non &#232; una retta&quot;" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;Retta orizzontale&quot;"/>
+                            <output expression="&quot;Retta orizzontale&quot;" newline="True"/>
                         </else>
                     </if>
                 </then>
                 <else>
                     <if expression="b==0">
                         <then>
-                            <output expression="&quot;Retta verticale&quot;"/>
+                            <output expression="&quot;Retta verticale&quot;" newline="True"/>
                         </then>
                         <else>
                             <assign variable="m" expression="-(a/b)"/>
                             <if expression="m&gt;0">
                                 <then>
-                                    <output expression="&quot;Retta obliqua crescente. m=&quot;&amp;m"/>
+                                    <output expression="&quot;Retta obliqua crescente. m=&quot;&amp;m" newline="True"/>
                                 </then>
                                 <else>
-                                    <output expression="&quot;Retta obliqua decrescente. m=&quot;&amp;m"/>
+                                    <output expression="&quot;Retta obliqua decrescente. m=&quot;&amp;m" newline="True"/>
                                 </else>
                             </if>
                         </else>
