@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Biglietteria parco divertimenti"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-06 05:00:37 PM"/>
+        <attribute name="created" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMDU7IDExOjI3OjEyIFBNOyAyNjY1"/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMDY7IDA1OjAwOjM3IFBNOyAyNjY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Biglietteria parco divertimenti"/>
+            <declare name="height, age, worker, handicap, hour, day" type="Integer" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <output expression="&quot;***BENVENUTO AL PARCO DIVERTIMENTI ***&quot;" newline="True"/>
+            <output expression="&quot;Disabile? (1=SI,0=NO)&quot;" newline="True"/>
+            <input variable="handicap"/>
+            <if expression="handicap==1">
+                <then>
+                    <assign variable="price" expression="0"/>
+                </then>
+                <else>
+                    <output expression="&quot;Inserisci altezza persona&quot;" newline="True"/>
+                    <input variable="height"/>
+                    <if expression="height&lt;=100">
+                        <then>
+                            <assign variable="price" expression="0"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Inserisci ora di ingresso&quot;" newline="True"/>
+                            <input variable="hour"/>
+                            <if expression="hour&gt;=17">
+                                <then>
+                                    <assign variable="price" expression="14.9"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Accompagnatore disabile? (1=SI,0=NO)&quot;" newline="True"/>
+                                    <input variable="worker"/>
+                                    <if expression="worker==1">
+                                        <then>
+                                            <assign variable="price" expression="25.5"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Inserisci et&#224;&quot;" newline="True"/>
+                                            <input variable="age"/>
+                                            <if expression="height&lt;=140 || age&gt;=60">
+                                                <then>
+                                                    <assign variable="price" expression="28"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="price" expression="35.9"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                            <output expression="&quot;Inserisci giorno attuale (1=LUN,2=MAR,...7=DOM)&quot;" newline="True"/>
+                            <input variable="day"/>
+                            <if expression="day&gt;=1 &amp;&amp; day&lt;=5">
+                                <then>
+                                    <assign variable="price" expression="price - price*0.1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Costo biglietto: &quot;&amp;price&amp;&quot;&#8364;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Numero naturale pari/dispari"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-06 04:50:53 PM"/>
+        <attribute name="created" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMDY7IDAzOjUwOjE0IFBNOyAyNjY1"/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMDY7IDA0OjUwOjUzIFBNOyAyNjY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Numero naturale pari o dispari"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci un numero naturale &gt;0&quot;" newline="True"/>
+            <input variable="N"/>
+            <if expression="N&gt;0">
+                <then>
+                    <if expression="N%2==0">
+                        <then>
+                            <output expression="&quot;Pari&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Dispari&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Numero errato&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
