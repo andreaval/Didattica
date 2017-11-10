@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Tiplogia triangolo"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-10 09:33:45 PM"/>
+        <attribute name="created" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMTA7IDA5OjEyOjMyIFBNOyAyNjY0"/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMTA7IDA5OjMzOjQ1IFBNOyAyNjcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Tipologia triangolo (equilatero,isoscele,scaleno)"/>
+            <declare name="SIDE1, SIDE2, SIDE3" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci lato 1&quot;" newline="True"/>
+            <input variable="SIDE1"/>
+            <output expression="&quot;Inserisci lato2&quot;" newline="True"/>
+            <input variable="SIDE2"/>
+            <output expression="&quot;Inserisci lato3&quot;" newline="True"/>
+            <input variable="SIDE3"/>
+            <if expression="SIDE1==SIDE2 &amp;&amp; SIDE2==SIDE3">
+                <then>
+                    <output expression="&quot;EQUILATERO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="SIDE1==SIDE2 || SIDE2==SIDE3 || SIDE1==SIDE3">
+                        <then>
+                            <output expression="&quot;ISOSCELE&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;SCALENO&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
