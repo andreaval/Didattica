@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Indovina u numero compreso tra 0 e 9"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-13 05:41:02 PM"/>
+        <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTEzOyAwNToyNzo1NyBQTTsgMjkzMg=="/>
+        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTEzOyAwNTo0MTowMiBQTTsgMjkxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Indovina numero pensato dal computer"/>
+            <declare name="N, X, I" type="Integer" array="False" size=""/>
+            <assign variable="X" expression="RANDOM(10)"/>
+            <output expression="&quot;Ho pensato un numero da 0 a 9. Prova ad indovinarlo!&quot;" newline="True"/>
+            <assign variable="I" expression="1"/>
+            <do expression="N!=X">
+                <output expression="I&amp;&quot;&#176; tentativo:&quot;" newline="True"/>
+                <input variable="N"/>
+                <assign variable="I" expression="I+1"/>
+            </do>
+            <output expression="&quot;BRAVO! Il numero segreto era &quot;&amp;X" newline="True"/>
+            <output expression="&quot;Hai indovinato con &quot;&amp;(I-1)&amp;&quot; tentativi&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
