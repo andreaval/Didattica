@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Indovina un numero compreso tra 0 e 99 (con aiuto)"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-14 07:37:37 PM"/>
+        <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTEzOyAwNToyNzo1NyBQTTsgMjkzMg=="/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTEtMTQ7IDA3OjM3OjM3IFBNOyAyNjc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Indovina numero pensato dal computer. In caso di errore si riceve un aiuto."/>
+            <declare name="N, X, I" type="Integer" array="False" size=""/>
+            <assign variable="X" expression="RANDOM(100)"/>
+            <output expression="&quot;Ho pensato un numero da 0 a 99. Prova ad indovinarlo!&quot;" newline="True"/>
+            <assign variable="I" expression="1"/>
+            <do expression="N!=X">
+                <output expression="I&amp;&quot;&#176; tentativo:&quot;" newline="True"/>
+                <input variable="N"/>
+                <if expression="N!=X">
+                    <then>
+                        <if expression="X&gt;N">
+                            <then>
+                                <output expression="&quot;Sbagliato. Il numero pensato &#232; maggiore&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Sbagliato. Il numero pensato &#232; minore&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="I" expression="I+1"/>
+            </do>
+            <output expression="&quot;BRAVO! Il numero segreto era &quot;&amp;X" newline="True"/>
+            <output expression="&quot;Hai indovinato con &quot;&amp;(I-1)&amp;&quot; tentativi&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
