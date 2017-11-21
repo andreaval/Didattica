@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andrea"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2017-11-10 12:36:25 AM"/>
+        <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTA5OyAxMToxNjozMyBQTTsgMjkyNg=="/>
+        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTEwOyAxMjozNjoyNSBBTTsgMjkwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="KM, COSTOB, CONSUMO, COSTOTOT, LITRI, SPESAS, NSTUDENTI" type="Integer" array="False" size=""/>
+            <input variable="KM"/>
+            <input variable="COSTOB"/>
+            <input variable="CONSUMO"/>
+            <assign variable="LITRI" expression="KM/CONSUMO"/>
+            <assign variable="COSTOTOT" expression="LITRI*COSTOB"/>
+            <if expression="KM&gt;500">
+                <then>
+                    <assign variable="COSTOTOT" expression="COSTOTOT+100"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="COSTOTOT" newline="True"/>
+            <input variable="NSTUDENTI"/>
+            <assign variable="SPESAS" expression="COSTOTOT/NSTUDENTI"/>
+            <output expression="SPESAS" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

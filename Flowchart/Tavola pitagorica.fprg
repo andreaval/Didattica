@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Tavola pitagorica"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-21 06:47:46 PM"/>
+        <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjoyNTowMyBQTTsgMjkyMQ=="/>
+        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjo0Nzo0NiBQTTsgMjkzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Generazione tavola pitagorica"/>
+            <declare name="N, I, J" type="Integer" array="False" size=""/>
+            <for variable="I" start="1" end="10" direction="inc" step="1">
+                <for variable="J" start="1" end="10" direction="inc" step="1">
+                    <assign variable="N" expression="I*J"/>
+                    <output expression="&quot;| &quot;&amp;(I*J)&amp;&quot; &quot;" newline="False"/>
+                </for>
+                <output expression="&quot;|&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

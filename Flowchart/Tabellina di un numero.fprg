@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Tabellina di un numero"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-21 06:37:46 PM"/>
+        <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjoyNTowMyBQTTsgMjkyMQ=="/>
+        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjozNzo0NiBQTTsgMjkzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Tabellina di un numero"/>
+            <declare name="N, M, I" type="Integer" array="False" size=""/>
+            <output expression="&quot;Numero di cui stampare la tabellina (1-10)&quot;" newline="True"/>
+            <input variable="N"/>
+            <if expression="N&gt;=1 &amp;&amp; N&lt;=10">
+                <then>
+                    <assign variable="M" expression="N"/>
+                    <for variable="I" start="1" end="10" direction="inc" step="1">
+                        <output expression="M&amp;&quot; &quot;" newline="False"/>
+                        <assign variable="M" expression="M+N"/>
+                    </for>
+                </then>
+                <else>
+                    <output expression="&quot;Errore inserimento&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Valore assoluto"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-21 06:24:59 PM"/>
+        <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjoyMDozMiBQTTsgMjkxOA=="/>
+        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjoyNDo1OSBQTTsgMjkzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Valore assoluto di un numero"/>
+            <declare name="number" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+            <input variable="number"/>
+            <if expression="number&lt;0">
+                <then>
+                    <assign variable="number" expression="number*-1"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Valore assoluto: &quot;&amp;number" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

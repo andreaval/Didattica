@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Lancio moneta (testa o croce)"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-21 06:16:10 PM"/>
+        <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjowMDoyOSBQTTsgMjkyMg=="/>
+        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjoxNjoxMCBQTTsgMjkxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Testa o croce"/>
+            <declare name="N, I, heads, tails, flip" type="Integer" array="False" size=""/>
+            <declare name="percH, percT" type="Real" array="False" size=""/>
+            <output expression="&quot;Numero di lanci:&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="heads" expression="0"/>
+            <assign variable="tails" expression="0"/>
+            <for variable="I" start="1" end="N" direction="inc" step="1">
+                <assign variable="flip" expression="RANDOM(2)"/>
+                <if expression="flip==1">
+                    <then>
+                        <assign variable="tails" expression="tails+1"/>
+                    </then>
+                    <else>
+                        <assign variable="heads" expression="heads+1"/>
+                    </else>
+                </if>
+            </for>
+            <assign variable="percH" expression="100*heads/N"/>
+            <assign variable="percT" expression="100*tails/N"/>
+            <output expression="&quot;Testa &#232; uscito &quot;&amp;heads&amp;&quot; volte (&quot;&amp;percH&amp;&quot;%)&quot;" newline="True"/>
+            <output expression="&quot;Croce &#232; uscito &quot;&amp;tails&amp;&quot; volte (&quot;&amp;percT&amp;&quot;%)&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
