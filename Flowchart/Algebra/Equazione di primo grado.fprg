@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Equazione di primo grado"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-21 06:58:26 PM"/>
+        <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjo1MzoyNiBQTTsgMjkyNw=="/>
+        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjo1ODoyNiBQTTsgMjkzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Equazione di primo grado"/>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci coefficiente della X:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Inserisci termine noto:&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a==0">
+                <then>
+                    <if expression="b==0">
+                        <then>
+                            <output expression="&quot;Indeterminata&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Impossibile&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Determinata&quot;" newline="True"/>
+                    <output expression="&quot;X=&quot;&amp;(b/a)" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
