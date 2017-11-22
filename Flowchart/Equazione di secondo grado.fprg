@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value="Risolutore eq. di secondo grado"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-11-22 09.31.10 "/>
+        <attribute name="created" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMC0yMDsgMDkuNTcuNTMgOyAyODE4"/>
+        <attribute name="edited" value="YW5kcmU7IERFU0tUT1AtUzRRSFRDSTsgMjAxNy0xMS0yMjsgMDkuMzEuMTAgOyAyODA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Risolutore equazione di secondo grado"/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <declare name="x1, x2, delta" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a == 0">
+                <then>
+                    <output expression="&quot;Equazione di 1&#176; grado&quot;"/>
+                    <if expression="b==0">
+                        <then>
+                            <if expression="c==0">
+                                <then>
+                                    <output expression="&quot;Indeterminata&quot;"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Impossibile&quot;"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="x1" expression="-c/b"/>
+                            <output expression="&quot;X = &quot; &amp; x1"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="delta" expression="b*b-4*a*c"/>
+                    <if expression="delta&lt;0">
+                        <then>
+                            <output expression="&quot;Non esistono soluzioni reali&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="delta==0">
+                                <then>
+                                    <output expression="&quot;Due soluzioni reali e coincidenti&quot;"/>
+                                    <assign variable="x1" expression="-b/(2*a)"/>
+                                    <output expression="&quot;X1 = X2 =&quot; &amp; X1"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Due soluzioni reali e distinte&quot;"/>
+                                    <assign variable="delta" expression="SQRT(delta)"/>
+                                    <assign variable="x1" expression="-b-delta/(2*a)"/>
+                                    <assign variable="x2" expression="-b+delta/(2*a)"/>
+                                    <output expression="&quot;X1 = &quot; &amp; x1"/>
+                                    <output expression="&quot;X2 = &quot; &amp; x2"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
