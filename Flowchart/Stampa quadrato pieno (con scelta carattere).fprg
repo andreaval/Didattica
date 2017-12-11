@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Stampa di un quadrato pieno di lato N (con scelta carattere)"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-12-11 05:59:06 PM"/>
+        <attribute name="created" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTItMTE7IDA1OjM1OjE3IFBNOyAyNjcw"/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTItMTE7IDA1OjU5OjA2IFBNOyAyNjc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Stampa di un quadrato pieno di lato N (con scelta carattere)"/>
+            <declare name="i, j, N" type="Integer" array="False" size=""/>
+            <declare name="c" type="String" array="False" size=""/>
+            <output expression="&quot;Lunghezza dei lati&quot;" newline="False"/>
+            <input variable="N"/>
+            <output expression="&quot;Carattere di riempimento&quot;" newline="False"/>
+            <input variable="c"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <for variable="j" start="1" end="N" direction="inc" step="1">
+                    <output expression="c&amp;&quot; &quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

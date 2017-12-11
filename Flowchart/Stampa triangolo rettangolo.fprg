@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Stampa di un trinagolo rettangolo"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2017-12-11 06:50:05 PM"/>
+        <attribute name="created" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTItMTE7IDA1OjM1OjE3IFBNOyAyNjcw"/>
+        <attribute name="edited" value="YW5kcmVhOyB1YnVudHU7IDIwMTctMTItMTE7IDA2OjUwOjA1IFBNOyAyNjY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Stampa di un triangolo rettangolo"/>
+            <declare name="i, j, N, Np" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <for variable="j" start="1" end="N" direction="inc" step="1">
+                    <if expression="i&gt;=j">
+                        <then>
+                            <output expression="&quot;+ &quot;" newline="False"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
