@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.9">
+    <attributes>
+        <attribute name="name" value="Funzione senza parametri"/>
+        <attribute name="authors" value="andreaval"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-01-09 01:11:07 PM"/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7IGxpbnV4LXNlcnZlcjsgMjAxOC0wMS0wOTsgMTI6MTA6MDMgUE07IDM3OTY="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7IGxpbnV4LXNlcnZlcjsgMjAxOC0wMS0wOTsgMDE6MTE6MDcgUE07IDM3OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B" type="Real" array="False" size=""/>
+            <assign variable="A" expression="READ()"/>
+            <assign variable="B" expression="READ()"/>
+            <if expression="A&gt;B">
+                <then>
+                    <output expression="&quot;Il numero maggiore &#232;: &quot;&amp;A" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Il numero maggiore &#232;: &quot;&amp;B" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="READ" type="Real" variable="N">
+        <parameters/>
+        <body>
+            <declare name="N" type="Real" array="False" size=""/>
+            <do expression="N&lt;0 || N&gt;100">
+                <output expression="&quot;Inserisci un numero compreso tra 0 e 100&quot;" newline="True"/>
+                <input variable="N"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
