@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Area del cerchio"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v.1"/>
+        <attribute name="saved" value="2018-01-23 05:25:29 PM"/>
+        <attribute name="created" value="YW5kcmVhO3VidW50dTsyMDE4LTAxLTIzOzA0OjUxOjI1IFBNOzI1NzI="/>
+        <attribute name="edited" value="YW5kcmVhO3VidW50dTsyMDE4LTAxLTIzOzA1OjI1OjI5IFBNOzI7MjY4Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area, r" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il raggio&quot;" newline="True"/>
+            <input variable="r"/>
+            <comment text="usata la costante PI, predefinita in Flowgorithm (3.14159265358979)"/>
+            <assign variable="area" expression="r ^ 2 * PI"/>
+            <output expression="&quot;Area = &quot; &amp; area" newline="True"/>
+            <output expression="&quot;Approssimazione PI = &quot; &amp; PI" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
