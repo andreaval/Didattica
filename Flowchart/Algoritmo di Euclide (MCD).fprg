@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Algoritmo di Euclide per il calcolo del MCD"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-01-23 06:24:37 PM"/>
+        <attribute name="created" value="YW5kcmVhO3VidW50dTsyMDE4LTAxLTIzOzA1OjMxOjMxIFBNOzI1Njg="/>
+        <attribute name="edited" value="YW5kcmVhO3VidW50dTsyMDE4LTAxLTIzOzA2OjI0OjM3IFBNOzI7MjY4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, REMAINDER" type="Integer" array="False" size=""/>
+            <do expression="A &lt;= 0">
+                <output expression="&quot;Inserisci 1&#176; numero&quot;" newline="True"/>
+                <input variable="A"/>
+            </do>
+            <do expression="B &lt;= 0">
+                <output expression="&quot;Inserisci 2&#176; numero&quot;" newline="True"/>
+                <input variable="B"/>
+            </do>
+            <while expression="B!=0">
+                <assign variable="REMAINDER" expression="A%B"/>
+                <assign variable="A" expression="B"/>
+                <assign variable="B" expression="REMAINDER"/>
+            </while>
+            <output expression="&quot;MCD = &quot; &amp; A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
