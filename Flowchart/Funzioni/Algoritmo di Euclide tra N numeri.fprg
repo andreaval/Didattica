@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="MCD tra N numeri dati"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-01-23 06:36:28 PM"/>
+        <attribute name="created" value="YW5kcmVhO3VidW50dTsyMDE4LTAxLTIzOzA1OjMxOjMxIFBNOzI1Njg="/>
+        <attribute name="edited" value="YW5kcmVhO3VidW50dTsyMDE4LTAxLTIzOzA2OjM2OjI4IFBNOzQ7MjY5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, N, I" type="Integer" array="False" size=""/>
+            <do expression="N&lt;2">
+                <output expression="&quot;Quanti numeri vuoi inserire?&quot;" newline="True"/>
+                <input variable="N"/>
+            </do>
+            <do expression="A &lt;= 0">
+                <output expression="&quot;Inserisci 1&#176; numero&quot;" newline="True"/>
+                <input variable="A"/>
+            </do>
+            <assign variable="I" expression="2"/>
+            <while expression="I&lt;=N">
+                <do expression="B&lt;=0">
+                    <output expression="&quot;Inserisci &quot; &amp; I &amp; &quot;&#176; numero&quot;" newline="True"/>
+                    <input variable="B"/>
+                </do>
+                <assign variable="A" expression="MCD(A,B)"/>
+                <assign variable="I" expression="I+1"/>
+            </while>
+            <output expression="&quot;MCD = &quot; &amp; A" newline="True"/>
+        </body>
+    </function>
+    <function name="MCD" type="Integer" variable="A">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="REMAINDER" type="Integer" array="False" size=""/>
+            <while expression="B!=0">
+                <assign variable="REMAINDER" expression="A%B"/>
+                <assign variable="A" expression="B"/>
+                <assign variable="B" expression="REMAINDER"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
