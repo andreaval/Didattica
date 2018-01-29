@@ -4,7 +4,7 @@
  * @version 1.0.0 21/01/2017
  */
 #include <stdio.h>
- 
+
 int main(){
     int Risposta; //valore di Risposta
     int E; //età
