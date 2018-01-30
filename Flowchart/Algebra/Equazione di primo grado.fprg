@@ -4,14 +4,14 @@
         <attribute name="name" value="Equazione di primo grado"/>
         <attribute name="authors" value="Andrea Vallorani"/>
         <attribute name="about" value="v1"/>
-        <attribute name="saved" value="2017-11-21 06:58:26 PM"/>
+        <attribute name="saved" value="2018-01-04 04:54:59 PM"/>
         <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjo1MzoyNiBQTTsgMjkyNw=="/>
-        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjo1ODoyNiBQTTsgMjkzMg=="/>
+        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE4LTAxLTA0OyAwNDo1NDo1OSBQTTsgMjkzMw=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <comment text="Equazione di primo grado"/>
+            <comment text="Risolutore di equazioni di primo grado nella forma standard ax=b"/>
             <declare name="a, b" type="Real" array="False" size=""/>
             <output expression="&quot;Inserisci coefficiente della X:&quot;" newline="True"/>
             <input variable="a"/>
