@@ -1,0 +1,10 @@
+---
+title: "Hello world!"
+author: [prof. Andrea Vallorani]
+date: 2018-01-01
+subject: "Corso di Informatica per il Liceo delle Scienze Applicate"
+tags: [Computer science, school]
+subtitle: "Informatica per il Liceo delle Scienze Applicate"
+titlepage: true
+stylesheet: styles/libro1.css
+...
