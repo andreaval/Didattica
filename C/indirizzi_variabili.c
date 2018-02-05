@@ -1,6 +1,6 @@
 /**
  * TEST INDIRIZZI DELLE VARIABILI
- * Visualizza l'indirizzo in memoria assegnato alle variabili
+ * Visualizza l'indirizzo in memoria assegnato ad alcune variabili
  * @author Andrea Vallorani
  * @version 1.0 19/11/2016
  */
