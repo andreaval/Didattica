@@ -2,11 +2,12 @@
  * C: TIPI SCALARI PRIMITIVI
  * Elenco dei tipi primitivi del linguaggio C con relativa dimensione
  * @author Andrea Vallorani
- * @version 1.0 17/11/2016
+ * @version 1.1 05/02/2018
  */
 #include <stdio.h>
 
 int main(){
+    printf("void:\t\t\t %lu bytes\n",sizeof(void));
     printf("char:\t\t\t %lu bytes\n",sizeof(char));
     printf("int:\t\t\t %lu bytes\n",sizeof(int));
     printf("float:\t\t\t %lu bytes\n",sizeof(float));
@@ -19,6 +20,11 @@ int main(){
     printf("long int:\t\t %lu bytes\n",sizeof(long int));
     printf("long unsigned int:\t %lu bytes\n",sizeof(long unsigned int));
     printf("long long int:\t\t %lu bytes\n",sizeof(long long int));
-    printf("long double:\t\t %lu bytes\n",sizeof(long double));
+    printf("long double:\t\t %lu bytes\n\n",sizeof(long double));
+    
+    printf("int*:\t\t\t %lu bytes\n",sizeof(int*));
+    printf("float*:\t\t\t %lu bytes\n",sizeof(float*));
+    printf("char*:\t\t\t %lu bytes\n",sizeof(char*));
+    printf("FILE:\t\t\t %lu bytes\n",sizeof(FILE));
     return 1;
 }
