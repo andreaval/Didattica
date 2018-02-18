@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Controllo appartenenza di un punto ad una retta"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-02-17 05:39:50 PM"/>
+        <attribute name="created" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDItMTc7MDU6Mjg6MDIgUE07MjQ5NQ=="/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDItMTc7MDU6Mzk6NTAgUE07MjsyNjA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x, y" type="Real" array="False" size=""/>
+            <declare name="r" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci coefficiente della X, della Y e termine noto&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <output expression="&quot;Ha inserito l'equazione &quot;&amp;a&amp;&quot;x+&quot;&amp;b&amp;&quot;y+&quot;&amp;c&amp;&quot;=0&quot;" newline="True"/>
+            <do expression="r==&quot;s&quot;">
+                <output expression="&quot;Inserisci coordinate punto&quot;" newline="True"/>
+                <input variable="x"/>
+                <input variable="y"/>
+                <output expression="&quot;Il punto (&quot;&amp;x&amp;&quot;,&quot;&amp;y&amp;&quot;) &quot;" newline="False"/>
+                <if expression="x*a+y*b+c==0">
+                    <then>
+                        <output expression="&quot;appartiene alla retta&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;non appartiene alla retta&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Vuoi controllare un altro punto? (s/n)&quot;" newline="True"/>
+                <input variable="r"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
