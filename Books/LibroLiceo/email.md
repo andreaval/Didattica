@@ -4,12 +4,17 @@ qui va una definizione
 ## Email servizio senza garanzia
 ## Gratuito o a pagamento?
 
-# Server email
-# Casella di posta
-## Struttura indirizzo email
-### Il carattere @
+# Concetti base
+## Casella di posta
+### Struttura indirizzo email
+#### Il carattere @
+### Indirizzi alias
+## Client email
+### Client web vs Client stand-alone
+## Server email
+### Provider email
 
-# Tecnologie alle base della posta elettronica
+# Funzionamento posta elettronica
 ## Servizio DNS
 ## Protocollo SMTP
 ## Protocolli IMAP e POP3
