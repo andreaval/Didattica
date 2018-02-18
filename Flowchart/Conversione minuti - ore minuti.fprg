@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Convertitore minuti in ore e minuti"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-02-09 01:18:27 PM"/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDItMDk7MTI6MjQ6MjggUE07MzcxMw=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDItMDk7MDE6MTg6MjcgUE07MzszODIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, o" type="Integer" array="False" size=""/>
+            <declare name="orario" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci i minuti&quot;" newline="True"/>
+            <input variable="m"/>
+            <if expression="m&lt;60">
+                <then>
+                    <assign variable="orario" expression="m &amp; &quot; minuti&quot;"/>
+                </then>
+                <else>
+                    <if expression="m&lt;120">
+                        <then>
+                            <assign variable="m" expression="m%60"/>
+                            <assign variable="orario" expression="&quot;1 ora e &quot; &amp; m &amp; &quot; minuti&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="o" expression="m/60"/>
+                            <assign variable="m" expression="m%60"/>
+                            <assign variable="orario" expression="o&amp;&quot; ore e &quot;&amp;m&amp;&quot; minuti&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="orario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

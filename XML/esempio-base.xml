@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<squadra serie="C1" anno_fondazione="1997"> 
+    <nome>Juminter</nome> 
+    <presidente>Mario Rossi</presidente> 
+    <allenatore>Giuseppe Bianchi</allenatore>
+    <giocatori>
+    <giocatore titolare="si"> 
+        <nome>Leonardo Da Vinci</nome> 
+        <ruolo>Terzino</ruolo> 
+    </giocatore> 
+    <giocatore titolare="no"> 
+        <nome>Cristoforo Colombo</nome> 
+        <ruolo>Attaccante</ruolo> 
+        <ruolo>Mezzala</ruolo> 
+    </giocatore> 
+    <giocatore titolare="si"> 
+        <nome>Giulio Cesare</nome> 
+        <ruolo>Difensore</ruolo> 
+    </giocatore> 
+</giocatori>
+</squadra> 

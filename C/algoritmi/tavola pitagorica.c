@@ -1,6 +1,5 @@
 /**
- * STAMPA TABELLINE
- * L'algoritmo stampa le tabelline dal 1 al 10
+ * STAMPA TAVOLA PITAGORICA
  * @author Andrea Vallorani
  * @version 1.0 19/12/16 22.29
  */
