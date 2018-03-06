@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Somma di due frazioni"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-03-06 01:16:56 PM"/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDMtMDY7MTI6NDY6NDYgUE07MzcxNQ=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDMtMDY7MDE6MTY6NTYgUE07MjszODIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, d1, n2, d2, nS, dS" type="Integer" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="d1"/>
+            <input variable="n2"/>
+            <input variable="d2"/>
+            <assign variable="dS" expression="mcm(d1,d2)"/>
+            <assign variable="nS" expression="(dS/d1*n1)+(dS/d2*n2)"/>
+            <output expression="nS&amp;&quot;/&quot;&amp;dS" newline="True"/>
+        </body>
+    </function>
+    <function name="mcm" type="Integer" variable="m">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="C, m, r, i" type="Integer" array="False" size=""/>
+            <if expression="A&gt;B">
+                <then>
+                    <assign variable="C" expression="A"/>
+                    <assign variable="A" expression="B"/>
+                    <assign variable="B" expression="C"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="i" expression="0"/>
+            <do expression="r!=0">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="m" expression="A*i"/>
+                <assign variable="r" expression="m%B"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
