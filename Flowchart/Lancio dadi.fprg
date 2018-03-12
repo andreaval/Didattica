@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Lancio di N dadi"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-03-12 11:31:59 AM"/>
+        <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjowMDoyOSBQTTsgMjkyMg=="/>
+        <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjoxNjoxMCBQTTsgMjkxOQ=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDMtMTI7MTE6MzE6NTkgQU07MTszODAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, die, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;Numero di dadi da lanciare:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="die" expression="RANDOM(6)+1"/>
+                <output expression="die&amp;&quot; &quot;" newline="True"/>
+                <assign variable="sum" expression="sum+die"/>
+            </for>
+            <output expression="&quot;Somma dadi: &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
