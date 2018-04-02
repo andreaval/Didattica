@@ -20,7 +20,7 @@ $$
 
 
 
-![](/Users/andrea/Sviluppo/Didattica/Books/LibroLiceo/images/crittografia-10.jpg)
+![](images/crittografia-10.jpg)
 *Schema 1 - **Invio e ricezione messaggio criptato***
 
 
