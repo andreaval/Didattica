@@ -1,5 +1,5 @@
 # Introduzione 
-La **crittografia** o criptografia (dal greco: scrittura nascosta) è la tecnica che consente di rendere un messaggio comprensibile solo al destinatario sottoponendo il testo a trasformazioni che lo rendano <u>incomprensibile</u> ad altri soggetti. 
+La **crittografia** o criptografia (dal greco: scrittura nascosta) è la tecnica che consente di rendere un messaggio comprensibile solo al destinatario sottoponendo il testo a trasformazioni per renderlo <u>incomprensibile</u> ad altri soggetti. 
 
 > **Testo in chiaro =** in inglese *plaintext (/ˈpleɪnˌtɛkst/)*, rappresenta in crittografia il testo originale da trasmettere.
 
