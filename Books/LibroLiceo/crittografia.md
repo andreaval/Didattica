@@ -1,11 +1,17 @@
 # Introduzione 
-La **crittografia** o criptografia (dal greco: scrittura nascosta) è la tecnica che consente di rendere un messaggio comprensibile solo al destinatario sottoponendo il testo del messaggio a trasformazioni che lo rendano <u>incomprensibile</u>. 
+La **crittografia** o criptografia (dal greco: scrittura nascosta) è la tecnica che consente di rendere un messaggio comprensibile solo al destinatario sottoponendo il testo a trasformazioni che lo rendano <u>incomprensibile</u> ad altri soggetti. 
 
-> **Testo in chiaro =** in inglese *plaintext*, rappresenta in crittografia il testo originale da trasmettere.
+> **Testo in chiaro =** in inglese *plaintext (/ˈpleɪnˌtɛkst/)*, rappresenta in crittografia il testo originale da trasmettere.
 
-> **Testo cifrato =** in inglese *ciphertext*, rappresenta in crittografia il testo originale trasformato e quindi incomprensibile.
+> **Testo cifrato =** in inglese *ciphertext (*/ˈsaɪ fərˌtɛkst/*)*, rappresenta in crittografia il testo originale trasformato e quindi incomprensibile.
 
-> **Criptare (cifrare, crittografare, crittare) =** in inglese *to encrypt*, trasformare il *plaintext* in *ciphertext*
+> **Criptare (cifrare, crittografare, crittare) =** in inglese *to encrypt (/ɛnˈkrɪpt/)*, trasformare il *plaintext* in *ciphertext*
+
+> **Decriptare (decifrare, decriptare) =** in inglese *to decrypt*, ritrasformare il testo cifrato in testo in chiaro 
+
+> **Cifrario =** algoritmo utilizzato per eseguire operazioni di cifratura e decifratura del messaggio.
+
+> **Chiave segreta =** in inglese *secret key (/ˈsikrɪt ki/)*, è l'informazione segreta condivisa tra mittente e destinatario necessaria alle operazioni di cifratura e decifratura.
 
 $$
 Criptare \ne Codificare
@@ -13,10 +19,6 @@ $$
 
 > **Codificare =** processo di conversione di un messaggio in un altro formato.  La codifica di un messaggio può avere svariati scopi (invio dati, salvataggio, ecc.), ma non quello di mantenere la riservatezza del messaggio originale.
 > La decodifica di un qualsiasi contenuto non richiede mai la conoscenza di una chiave, ma solo la conoscenza dell’algoritmo, che è tipicamente (e volutamente) noto. Un sistema di codifica usato di frequente è <u>Base64</u>. 
-
-> **Decriptare (decifrare, decriptare) =** in inglese *to decrypt*, ritrasformare il testo cifrato in testo in chiaro 
-
-> **Cifrario =** algoritmo utilizzato per eseguire operazioni di cifratura e decifratura del messaggio.
 
 
 
