@@ -33,9 +33,14 @@
 ## Prioritá tra gli operatori
 ### Operatori binari ed unari
 ## L’iterazione
-### Iterazioni indefinite
+**N.B.** Per convenzione una variabile contatore di un’iterazione si indica con la lettera **i**
+### Iterazioni indefinite 
+**N.B.** In genere (salvo casi particolari), _bisogna ricordarsi_, di *inizializzare* la variabile contatore prima dell’interazione e all’interno del ciclo, di *incrementare o decrementare* (a seconda del tipo di condizione) la variabile contatore.
+#### Pre-condizionali
+#### Post-condizionali
 ### Iterazioni definite
 ### Iterazioni annidate 
+**N.B.** Per convenzione una variabile contatore di un’iterazione annidata si indica con la lettera **j**
 ## Teorema di Bohm-Jacopini
 ## Le funzioni
 ### Vantaggi di utilizzo

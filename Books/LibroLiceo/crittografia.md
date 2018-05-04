@@ -83,6 +83,24 @@ Chiave:          A J R F
 \------------------------
 Testo cifrato:   C R R T
 
+## DES
+
+## AES
+
 # Crittografia asimmetrica
+## Algoritmo RSA
+### Lab: creazione chiavi con OpenSSL
+## Altri algoritmi asimmetrici
+
+# Funzioni hash
+
+# Firma digitale
+## Lab: creazione firma digitale con GPG
+
+# Certificati digitali
+## CA
+
+
+
 
 
