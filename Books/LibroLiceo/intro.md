@@ -3,3 +3,13 @@
 
 
 "Stay hungry. Stay foolish" (Stewart Brand - *The Whole Earth Catalog Epilog* - 1974)  (Steve Jobs 2005)
+
+
+
+Dizionario utilizzato
+
+https://en.oxforddictionaries.com
+
+https://public.oed.com/how-to-use-the-oed/key-to-pronunciation
+
+IPA https://it.wikipedia.org/wiki/Alfabeto_fonetico_internazionale
