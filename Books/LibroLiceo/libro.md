@@ -87,8 +87,39 @@ Sintassi Math Latex: [link](https://it.wikipedia.org/wiki/Aiuto:Formule_matemati
 
 <figure markdown="1">
   <img src="images/crittografia-10.jpg" alt="alt text">
-  <figcaption>My caption</figcaption>
+
+ <figcaption>My caption</figcaption>
 </figure>
 
 
 
+## 1.3 MathJax
+
+Conversione decimale -> binario
+$$
+\begin{matrix}
+\begin{array}{l}
+\quad\enspace\,\,\mathbf{_{2}}   \\
+ \begin{array}{r|rc}
+23 &  \\
+11 & {\color{red}1} \\
+5 & {\color{red}1}   \\
+2 & {\color{red}1}  & \uparrow\\
+1 & {\color{red}0}  \\
+0 & {\color{red}1}  \\
+  \end{array} 
+\end{array}
+& = 10111_{2}
+\end{matrix}
+$$
+Calcolo binario
+$$
+\begin{array}{rrrrr|r}
+&1&1&1&1& + \\
+ && 1 &1 & 1 & = \\ \hline
+ 1&0&1&1&0&
+  \end{array}
+$$
+Tutorial completo MathJax: [https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference]
+
+Editor online MathJax: [https://www.codecogs.com/eqnedit.php]
