@@ -51,23 +51,21 @@
 ### Invocazione e parametri attuali
 ## Gli array
 
-> **Array:** un array (*/əˈreɪ/*), chiamato anche *vettore*, è un insieme ordinato e omogeneo di variabili. Ordinato perchè le variabili sono disposte in un ordine ben preciso e omogeneo perchè le variabili devono tutte essere dello stesso tipo. 
+> **Array:** un array (*/əˈreɪ/*), è un insieme ordinato e omogeneo di variabili. Ordinato perchè le variabili sono disposte in un ordine ben preciso e omogeneo perchè le variabili devono essere tutte dello stesso tipo. 
 
 > **Elemento di un array:** ogni variabile facente parte di un array prende il nome di elemento di un array.
 
-> **Indice (o posizione) di un elemento:** è un valore numerico (in alcuni linguaggio anche alfanumerico) che indica la posizione esatta dell'elemento all'interno dell'array di cui fa parte.
+> **Indice (o posizione) di un elemento:** è un valore numerico che indica la posizione esatta dell'elemento all'interno dell'array. Ad ogni indice corrisponde uno ed un solo elemento. 
 
-$$
-\begin{matrix}
-A &
-\begin{array}{|c|c|c|c|c|}
-\large 3 &  \large 2 & \large 6 & \large 0  & \large 4\\ \hline
-\end{array} \\
-&\begin{array}{cccc}
-\color{gray} {\small \,0} & \color{gray} {\small \,1} & \color{gray} {\small \,2} & \color{gray} {\small \,3}  & \color{gray} {\small \,4}\\ 
-\end{array}
-\end{matrix}
-$$
+![Struttura di un array](C:\Users\andre\Documents\Didattica\Books\LibroLiceo\images\Array01.png)
+
+Nella maggior parte dei linguaggi di programmazione al primo elemento di un array viene assegnata la posizione **0** (zero) e <u>non</u> 1.  Anche in questo testo verrà seguita questa convenzione.
+
+> **Dimensione di un array:** numero di elementi che compongono l'array.
+
+Un array di dimensione **n** ($n \in \mathbb{ N_{0} }$) è un array composto da **n** elementi dove il primo elemento avrà indice **0** mentre l'ultimo avrà indice **n-1** .
+
+N.B. ogni posizione dell'array da 0 a n-1 viene assegnata ad una variabile. <u>Non esiste</u> una posizione non assegnata.
 
 Per identificare un elemento dell'array si utilizza la seguente notazione: 
 $$
