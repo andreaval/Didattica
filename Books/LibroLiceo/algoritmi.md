@@ -57,7 +57,7 @@
 
 > **Indice (o posizione) di un elemento:** è un valore numerico che indica la posizione esatta dell'elemento all'interno dell'array. Ad ogni indice corrisponde uno ed un solo elemento. 
 
-![Struttura di un array](C:\Users\andre\Documents\Didattica\Books\LibroLiceo\images\Array01.png)
+![Struttura di un array](images\Array01.png)
 
 Nella maggior parte dei linguaggi di programmazione al primo elemento di un array viene assegnata la posizione **0** (zero) e <u>non</u> 1.  Anche in questo testo verrà seguita questa convenzione.
 
