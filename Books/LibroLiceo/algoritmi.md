@@ -33,9 +33,11 @@
 ## Prioritá tra gli operatori
 ### Operatori binari ed unari
 ## L’iterazione
-**N.B.** Per convenzione una variabile contatore di un’iterazione si indica con la lettera **i**
+**N.B.** Per convenzione, in un'iterazione, la variabile contatore si indica con la lettera **i**
+
+**N.B. 2** Se in un'iterazione si fa uso di un contatore bisogna <u>sempre</u> ricordarsi di inizializzarlo prima dell'inizio dell'iterazione e di  *incrementarlo o decrementarlo* (a seconda del tipo di contatore) all'interno del clico.
+
 ### Iterazioni indefinite 
-**N.B.** In genere (salvo casi particolari), _bisogna ricordarsi_, di *inizializzare* la variabile contatore prima dell’interazione e all’interno del ciclo, di *incrementare o decrementare* (a seconda del tipo di condizione) la variabile contatore.
 #### Pre-condizionali
 #### Post-condizionali
 ### Iterazioni definite
@@ -48,3 +50,27 @@
 ### Paramettri formali
 ### Invocazione e parametri attuali
 ## Gli array
+
+> **Array:** un array (*/əˈreɪ/*), chiamato anche *vettore*, è un insieme ordinato e omogeneo di variabili. Ordinato perchè le variabili sono disposte in un ordine ben preciso e omogeneo perchè le variabili devono tutte essere dello stesso tipo. 
+
+> **Elemento di un array:** ogni variabile facente parte di un array prende il nome di elemento di un array.
+
+> **Indice (o posizione) di un elemento:** è un valore numerico (in alcuni linguaggio anche alfanumerico) che indica la posizione esatta dell'elemento all'interno dell'array di cui fa parte.
+
+$$
+\begin{matrix}
+A &
+\begin{array}{|c|c|c|c|c|}
+\large 3 &  \large 2 & \large 6 & \large 0  & \large 4\\ \hline
+\end{array} \\
+&\begin{array}{cccc}
+\color{gray} {\small \,0} & \color{gray} {\small \,1} & \color{gray} {\small \,2} & \color{gray} {\small \,3}  & \color{gray} {\small \,4}\\ 
+\end{array}
+\end{matrix}
+$$
+
+Per identificare un elemento dell'array si utilizza la seguente notazione: 
+$$
+\huge{A[0]} \\ \small {(elemento \, dell'array \,A\, in\, posizione \,0)}
+$$
+Dove **A** rappresenta il nome dell'array e **[0]** la posizione dell'elemento racchiusa tra parentesi quadre. 
