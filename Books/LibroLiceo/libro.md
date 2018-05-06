@@ -123,3 +123,18 @@ $$
 Tutorial completo MathJax: [https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference]
 
 Editor online MathJax: [https://www.codecogs.com/eqnedit.php]
+
+
+
+Array
+$$
+\begin{matrix}
+A &
+\begin{array}{|c|c|c|c|c|}
+\large 3 &  \large 2 & \large 6 & \large 0  & \large 4\\ \hline
+\end{array} \\
+&\begin{array}{cccc}
+\color{gray} {\small \,0} & \color{gray} {\small \,1} & \color{gray} {\small \,2} & \color{gray} {\small \,3}  & \color{gray} {\small \,4}\\ 
+\end{array}
+\end{matrix}
+$$
