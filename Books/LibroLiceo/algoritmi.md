@@ -53,7 +53,7 @@
 
 > **Array:** un array (*/əˈreɪ/*), è un insieme ordinato e omogeneo di variabili. Ordinato perchè le variabili sono disposte in un ordine ben preciso e omogeneo perchè le variabili devono essere tutte dello stesso tipo. 
 
-> **Elemento di un array:** ogni variabile facente parte di un array prende il nome di elemento di un array.
+> **Elemento di un array:** ogni variabile che fa parte dell'array prende il nome di elemento di un array.
 
 > **Indice (o posizione) di un elemento:** è un valore numerico che indica la posizione esatta dell'elemento all'interno dell'array. Ad ogni indice corrisponde uno ed un solo elemento. 
 
@@ -65,7 +65,7 @@ Nella maggior parte dei linguaggi di programmazione al primo elemento di un arra
 
 Un array di dimensione **n** ($n \in \mathbb{ N_{0} }$) è un array composto da **n** elementi dove il primo elemento avrà indice **0** mentre l'ultimo avrà indice **n-1** .
 
-N.B. ogni posizione dell'array da 0 a n-1 viene assegnata ad una variabile. <u>Non esiste</u> una posizione non assegnata.
+**N.B.** ogni posizione dell'array da 0 a n-1 viene assegnata ad una variabile. <u>Non esiste</u> una posizione non assegnata.
 
 Per identificare un elemento dell'array si utilizza la seguente notazione: 
 $$
