@@ -145,6 +145,34 @@ Un'altra considerazione da fare è che non è possibile che un utente rilevi u
 
 ## Lab: creazione firma digitale con GPG
 
+```shell
+#creare coppia chiavi RSA
+gpg --gen-key
+
+#mostrare chiavi create
+gpg --list-keys
+        
+#firmare documento
+gpg --clearsign --output=testo-firmato.txt testo.txt
+
+#verificare firma
+gpg --verify testo-firmato.txt
+
+#firmare documento con 2 firme
+gpg --clearsign -u email1 -u email2 output=testo-2firme.txt testo.txt
+
+#esportare chiave pubblica su archivio pubblico
+gpg --send-keys IDCHIAVE
+
+#importare chiave pubblica da archivio pubblico
+gpg --recv-keys IDCHIAVE
+
+#cercare chiave su archivio pubblico
+gpg --search-keys email o IDCHIAVE o nome_proprietario
+```
+
+
+
 # Certificati digitali
 
 Il crescente utilizzo di servizi automatizzati ha portato alla ribalta il problema della sicurezza nello scambio di informazioni. In generale, quando due sistemi intendono scambiarsi dati, si avrà bisogno di un canale di comunicazione sicuro, cioè privo di intercettazioni e del riconoscimento tra le rispettive parti che intendono procedere allo scambio di informazioni. 
@@ -169,7 +197,7 @@ In pratica il certificato digitale diventa equivalente alla carta d'identità: 
 Un certificato digitale tipicamente include: 
 
 - una chiave pubblica
-- i dati identificativi del proprietario
+- i dati identificativi del proprietario della chiave
 - un periodo di validità (valido dal-al)
 - l'URL della lista dei certificati revocati (CRL)
 
