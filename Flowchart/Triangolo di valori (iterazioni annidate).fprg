@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="a_vallorani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-05-04 09:59:55 AM"/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDUtMDQ7MDk6MzM6MTEgQU07MzY5NA=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDUtMDQ7MDk6NTk6NTUgQU07MTszODE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, I, J" type="Integer" array="False" size=""/>
+            <do expression="N&lt;=0">
+                <input variable="N"/>
+            </do>
+            <assign variable="I" expression="0"/>
+            <while expression="I&lt;N">
+                <assign variable="I" expression="I+1"/>
+                <assign variable="J" expression="0"/>
+                <while expression="J&lt;I">
+                    <assign variable="J" expression="J+1"/>
+                    <if expression="I&lt;10">
+                        <then>
+                            <output expression="&quot; &quot;" newline="False"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <output expression="I&amp;&quot; &quot;" newline="False"/>
+                </while>
+                <output expression="&quot;&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
