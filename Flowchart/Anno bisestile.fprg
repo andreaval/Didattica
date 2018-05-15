@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Controlla se un anno &#232; bisestile o meno"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-05-15 02:07:07 AM"/>
+        <attribute name="created" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDUtMTU7MDE6NDY6NDIgQU07MjQ4MQ=="/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDUtMTU7MDI6MDc6MDcgQU07MzsyNTkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Anno da controllare&quot;" newline="True"/>
+            <input variable="Y"/>
+            <if expression="BISESTILE(Y)==1">
+                <then>
+                    <output expression="&quot;E' bisestile&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Non &#232; bisestile&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="BISESTILE" type="Integer" variable="X">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="X" type="Integer" array="False" size=""/>
+            <if expression="(A%4==0 AND A%100!=0) OR A%400==0">
+                <then>
+                    <assign variable="X" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="X" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
