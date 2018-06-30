@@ -1,10 +1,14 @@
-# Introduzione 
+
+<img src="images/crittografia-0.png" alt="Crittografia" />
+
+# **1.** Introduzione 
+
 La **crittografia** o criptografia (dal greco: scrittura nascosta) è la tecnica che consente di rendere un messaggio comprensibile solo al destinatario. Il testo del messaggio viene sottoposto a "trasformazioni" che lo rendono <u>incomprensibile</u> agli altri soggetti. 
 
-**N.B.** Tecniche che nascondono l'esistenza del messaggio non sono considerate tecniche crittografiche ma tecniche di **steganografia** (dal greco: scrittura coperta). Tra queste ricordiamo:
+<div class="nb"><span>N.B.</span> Tecniche che nascondono l'esistenza del messaggio non sono considerate tecniche crittografiche ma tecniche di **steganografia** (dal greco: scrittura coperta). Tra queste ricordiamo:
 
 - Inchiostro simpatico
-- Messaggio tatuato sulla testa di uno schiavo e mascherato dalla ricrescita dei capelli
+- Messaggio tatuato sulla testa di uno schiavo e mascherato dalla ricrescita dei capelli</div>
 
 Per capire i paragrafi seguenti è bene dare subito una definizione formale dei termini che verranno utilizzati:
 
@@ -12,32 +16,27 @@ Per capire i paragrafi seguenti è bene dare subito una definizione formale dei 
 
 > **Testo cifrato**: in inglese *ciphertext (/ˈsʌɪfəˌtɛkst/)*, rappresenta in crittografia il testo originale trasformato e quindi incomprensibile.
 
-> **Criptare (cifrare, crittografare, crittare)**: in inglese *to encrypt (/ɛnˈkrɪpt/)*, trasformare il *plaintext* in *ciphertext*
+> **Criptare**(cifrare, crittografare, crittare) :  in inglese *to encrypt (/ɛnˈkrɪpt/)*, trasformare il *plaintext* in *ciphertext*
 
-> **Decriptare (decifrare, decriptare)**: in inglese *to decrypt (/diˈkrɪpt/)*, ritrasformare il testo cifrato in testo in chiaro 
+> **Decriptare** (decifrare, decrittare) : in inglese *to decrypt (/diˈkrɪpt/)*, ritrasformare il *ciphertext* in *plaintext*
 
 > **Cifrario**: algoritmo utilizzato per eseguire operazioni di cifratura e decifratura del messaggio.
 
+<figure>
+<img src="images/crittografia-10.jpg" alt="Schema 1 - Invio e ricezione messaggio criptato" /><figcaption>*Schema 1* - Invio e ricezione messaggio criptato</figcaption>
+</figure>
+
+## **1.1** Chiave segreta
+
+<figure>
+<img src="images/crittografia-11.png" alt="Sequence diagram 1 - Invio e ricezione messaggio criptato" />
+<figcaption>*Sequence diagram 1* - Invio e ricezione messaggio criptato</figcaption>
+</figure>
+
+Alice e Bob per scambiarsi un messaggio criptato devono utilizzare lo stesso algoritmo di crittografia e condividere un'informazione riservata chiamata <u>chiave segreta</u>. Questo perchè mentre l'algoritmo utilizzato è in genere un algoritmo "noto", conosciuto da tutti, la chiave segreta è un codice di proprietà di Alice e Bob che dovrà essere custodito in maniera sicura.   
+
 > **Chiave segreta**: in inglese *secret key (/ˈsiːkrɪt kiː/)*, è l'informazione segreta condivisa tra mittente e destinatario necessaria alle operazioni di cifratura e decifratura.
-
-$$
-Criptare \ne Codificare
-$$
-
-> **Codificare:** processo di conversione di un messaggio in un altro formato.  
-
-La codifica di un messaggio può avere svariati scopi (invio dati, salvataggio, ecc.), ma <u>non</u> quello di mantenere la riservatezza del messaggio originale. Inoltre, la decodifica di un qualsiasi contenuto non richiede mai la conoscenza di una chiave, ma solo la conoscenza dell’algoritmo, che è tipicamente (e volutamente) noto. Un sistema di codifica molto utilizzato per le comunicazioni in Internet è ad esempio la codifica [Base64](https://it.wikipedia.org/wiki/Base64).
-
-Quindi utilizzare il termine codificare come sinonimo di criptare <u>è tecnicamente sbagliato</u>.
-
-![](images/crittografia-10.jpg)
-*Schema 1 - **Invio e ricezione messaggio criptato***
-
-
-
-~~**N.B.** la robustezza di un algoritmo crittografico può in alcuni casi essere data dalla segretezza dell’algoritmo utilizzato oltre che dalla chiave~~
-
-?? chiave segreta ??
+>
 
 > **Crittoanalisi:** Strategia di ricostruzione del testo in chiaro a partire da uno o più testi cifrati di cui non si possiede la chiave. Tipicamente l’oggetto dell’analisi è la chiave segreta di accesso.
 
@@ -49,6 +48,15 @@ $$
 
 > La **crittologia** è la disciplina che studia tutti gli aspetti delle scritture nascoste.
 
+$$
+Criptare \ne Codificare
+$$
+
+> **Codificare:** processo di conversione di un messaggio in un altro formato.  
+
+La codifica di un messaggio può avere svariati scopi (invio dati, salvataggio, ecc.), ma <u>non</u> quello di mantenere la riservatezza del messaggio originale. Inoltre, la decodifica di un qualsiasi contenuto non richiede mai la conoscenza di una chiave, ma solo la conoscenza dell’algoritmo, che è tipicamente (e volutamente) noto. Un sistema di codifica molto utilizzato per le comunicazioni in Internet è ad esempio la codifica [Base64](https://it.wikipedia.org/wiki/Base64).
+
+Quindi utilizzare il termine codificare come sinonimo di criptare <u>è tecnicamente sbagliato</u>.
 
 Le tecniche crittografiche possono essere classificate in due principali sistemi: a **chiave simmetrica** e a **chiave asimmetrica**.
 

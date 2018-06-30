@@ -138,3 +138,18 @@ A &
 \end{array}
 \end{matrix}
 $$
+
+
+
+## 1.4 Sequence diagram
+
+```sequence
+participant Alice as A
+participant Bob as B
+Note left of A: CIAO
+A->A: 1. cripta il messaggio
+A->B: 2. invia messaggio criptato
+B->B: 3. decripta il messaggio
+Note right of B: CIAO
+```
+
