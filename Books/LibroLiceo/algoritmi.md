@@ -1,13 +1,26 @@
 # Cos’é un algoritmo
 
 ## Risolutore ed esecutore
+N.B. Il computer non pensa e non intuisce. Calcola e memorizza unicamente dati.
+
 ## Fasi di risoluzione di un problema
+
+![Algoritmi10](images/Algoritmi10.png)
+
+| 1. ANALISI                            | 2. PROGETTAZIONE                                          | 3. CODIFICA                                                 |
+| ------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------- |
+| Identificare i dati in **INPUT**      | Creare l'**algoritmo**                                    | Scrittura del **codice** in un linguaggio di programmazione |
+| Identificare i dati in **OUTPUT**     | Verificare correttezza dell'algoritmo tramite **tracing** | **Compilazione** del codice                                 |
+| Trovare la **soluzione** del problema |                                                           | **Testing** del codice                                      |
+
+
+
 ## L’analisi del problema
 ### Input
 ### Output
 ### Strategia risolutiva
 ## Progettazione dell’algoritmo
-## Codifica dell’algoritmo
+## Codifica tramite linguaggio di programmazione
 
 # Scrivere un algoritmo
 
