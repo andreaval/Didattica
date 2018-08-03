@@ -7,11 +7,11 @@ N.B. Il computer non pensa e non intuisce. Calcola e memorizza unicamente dati.
 
 ![Algoritmi10](images/Algoritmi10.png)
 
-| 1. ANALISI                            | 2. PROGETTAZIONE                                          | 3. CODIFICA                                                 |
-| ------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------- |
-| Identificare i dati in **INPUT**      | Creare l'**algoritmo**                                    | Scrittura del **codice** in un linguaggio di programmazione |
-| Identificare i dati in **OUTPUT**     | Verificare correttezza dell'algoritmo tramite **tracing** | **Compilazione** del codice                                 |
-| Trovare la **soluzione** del problema |                                                           | **Testing** del codice                                      |
+| 1. ANALISI                           | 2. PROGETTAZIONE                                          | 3. CODIFICA                                                 |
+| ------------------------------------ | --------------------------------------------------------- | ----------------------------------------------------------- |
+| Identificare i dati in **INPUT**     | Creare l'**algoritmo**                                    | Scrittura del **codice** in un linguaggio di programmazione |
+| Identificare i dati in **OUTPUT**    | Verificare correttezza dell'algoritmo tramite **tracing** | **Compilazione** del codice                                 |
+| Trovare una **strategia risolutiva** |                                                           | **Testing** del codice                                      |
 
 
 
