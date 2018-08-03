@@ -85,3 +85,12 @@ $$
 \huge{A[0]} \\ \small {(elemento \, dell'array \,A\, in\, posizione \,0)}
 $$
 Dove **A** rappresenta il nome dell'array e **[0]** la posizione dell'elemento racchiusa tra parentesi quadre. 
+
+# Esercizi
+## Prove di competenza
+### Auto o bici?
+Il professore di matematica per venire a scuola può usare la bicicletta o l’automobile. In bicicletta va a una velocità di 20 km/h; in automobile va a una velocità di 30 km/h ma ha bisogno di 20 minuti per parcheggiare. Che mezzo gli conviene prendere?
+Matematica: *Determinare per quale distanza T conviene prendere un mezzo o l’altro*
+Informatica: *Creare un algoritmo che, ricevendo in input la distanza T, indica all’utente quale mezzo utilizzare*
+Informatica2: *Rispetto all’algoritmo precedente fornire in input anche le velocità dei mezzi e i tempi di parcheggio*
+Matematica+Informatica: *Creare un algoritmo che date in input le velocità dei mezzi determini per quale distanza T conviene prendere uno o l’altro mezzo.*
