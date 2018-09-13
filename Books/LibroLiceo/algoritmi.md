@@ -1,13 +1,32 @@
 # Cos’é un algoritmo
 
+> **Algoritmo:** in inglese *algorithm (/ˈælɡəˌrɪðəm/)*, procedimento che risolve un determinato problema attraverso un numero finito e ordinato di passi (azioni, istruzioni).
+
 ## Risolutore ed esecutore
-N.B. Il computer non pensa e non intuisce. Calcola e memorizza unicamente dati.
+
+Il computer ha due importanti caratteristiche: il calcolo e la memorizzazione. Rispetto alla mente umana è in grado di svolgere calcoli in maniera enormemente più rapida ed è in grado di memorizzare una quantità di dati teoricamente illimitata. Tuttavia il computer ha un grande limite: non è in grado di pensare in maniera autonoma; questo significa che **non può** risolvere problemi per cui non è stato programmato.
+
+> **Il computer risolve unicamente problemi che l'uomo ha già risolto.**Tuttavia lo fa in maniera rapida e precisa, in tempi, in genere, brevissimi.
+
+Il computer è dunque un semplice ESECUTORE di istruzioni che gli sono state impartite da una determinata persona chiamata RISOLUTORE. Entrambe le figure sono indispensabili per la risoluzione rapida e corretta di un problema.
+
+ L'ESECUTORE senza il RISOLUTORE non potrebbe mai risolvere un problema perchè non conosce la corretta sequenza di istruzioni da svolgere. Al tempo stesso anche Il RISOLUTORE senza l'ESECUTORE potrebbe non arrivare mai alla soluzione perchè potrebbe impiegare un tempo enorme per svolgere i calcoli richiesti.
+
+> **Programmatore:** persona che insegna al computer a saper fare qualcosa
+
+$$
+\text{Programmatore} \ne \text{Utente del computer}
+$$
+
+> **Utente del computer:** colui che utilizza il computer, che sa fare qualcosa con esso 
+
+
 
 ## Fasi di risoluzione di un problema
 
 ![Algoritmi10](images/Algoritmi10.png)
 
-| 1. ANALISI                           | 2. PROGETTAZIONE                                          | 3. CODIFICA                                                 |
+| 1. ANALISI                           | 2. ALGORITMO                                              | 3. CODIFICA                                                 |
 | ------------------------------------ | --------------------------------------------------------- | ----------------------------------------------------------- |
 | Identificare i dati in **INPUT**     | Creare l'**algoritmo**                                    | Scrittura del **codice** in un linguaggio di programmazione |
 | Identificare i dati in **OUTPUT**    | Verificare correttezza dell'algoritmo tramite **tracing** | **Compilazione** del codice                                 |
@@ -16,16 +35,23 @@ N.B. Il computer non pensa e non intuisce. Calcola e memorizza unicamente dati.
 
 
 ## L’analisi del problema
+
+
 ### Input
+
 ### Output
 ### Strategia risolutiva
 ## Progettazione dell’algoritmo
+
+
 ## Codifica tramite linguaggio di programmazione
 
 # Scrivere un algoritmo
 
-## Formalismi per la scrittura di algoritmi
+L'algoritmo si rappresenta in genere tramite il formalismo grafico del **Flow chart** (/fləʊ tʃɑːt/) (in italiano Diagramma di flusso)
+
 ## I flowchart
+
 ### Elementi di un flowchart
 ### Regole per la costruzione di un flowchart
 ## La sequenza
