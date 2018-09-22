@@ -114,27 +114,27 @@ Dove **A** rappresenta il nome dell'array e **[0]** la posizione dell'elemento r
 
 <u>Esempio:</u> dato un array **A** di interi di lunghezza **4** :
 
-![Array02](/Users/andrea/Sviluppo/Didattica/Books/LibroLiceo/images/Array02.png)
+![Array vuoto](images/Array02.png)
 
 l'operazione di assegnazione ${A[1]=3}$  (*assegnazione con indice statico*) inserisce il valore $3$ in posizione $1$:
 
-![Array03](/Users/andrea/Sviluppo/Didattica/Books/LibroLiceo/images/Array03.png)
+![Indice statico](images/Array03.png)
 
 l'operazione di assegnazione ${A=3}$ produce un <u>errore</u>, in quanto non è indicata la posizione dell'array in cui inserire il valore.
 
 Data la variabile ${I = 0}$, l'assegnazione ${A[I]=6}$ (assegnazione con indice dinamico), inserisce il valore $6$ in posizione $0$ (in quanto $0$ è il valore corrente della variabile $I$):
 
-![Array04](/Users/andrea/Sviluppo/Didattica/Books/LibroLiceo/images/Array04.png)
+![Indice dinamico](images/Array04.png)
 
 l'operazione di assegnazione ${A[I+1]=A[0]+1}$ inserisce il valore $7$ (risultato dell'espressione $A[0]+1$) all'interno dell'elemento in posizione ${I+1}$ ovvero $1$ in quanto $I=0$ .
 
-![Array05](/Users/andrea/Sviluppo/Didattica/Books/LibroLiceo/images/Array05.png)
+![Indice dinamico con espressione](images/Array05.png)
 
 > **Inizializzazione di un array:** inizializzare un array significa inizializzare ogni singolo elemento dell'array ad un determinato valore.
 
 Il seguente flowchart, mostra un esempio di inizializzazione di un array di interi composto da 10 elementi. Attraverso un'iterazione precondizionale ogni elemento viene inizializzato al valore **0** (zero).
 
-![Algoritmo200](/Users/andrea/Sviluppo/Didattica/Books/LibroLiceo/images/Algoritmo200.png)
+![Inizializzazione di un array](images/Algoritmo200.png)
 
 
 
