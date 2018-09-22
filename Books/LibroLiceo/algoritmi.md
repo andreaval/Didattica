@@ -100,11 +100,11 @@ L'algoritmo si rappresenta in genere tramite il formalismo grafico del **Flow ch
 
 Nella maggior parte dei linguaggi di programmazione al primo elemento di un array viene assegnata la posizione **0** (zero) e <u>non</u> 1.  Anche in questo testo verrà seguita questa convenzione.
 
-> **Dimensione di un array:** numero di elementi che compongono l'array.
+> **Lunghezza di un array:** numero di elementi che compongono l'array.
 
-Un array di dimensione **n** ($n \in \mathbb{ N_{0} }$) è un array composto da **n** elementi dove il primo elemento avrà indice **0** mentre l'ultimo avrà indice **n-1** .
+Un array di lunghezza **n** ($n \in \mathbb{ N_{0} }$) è un array composto da **n** elementi dove il primo elemento avrà indice **0** mentre l'ultimo avrà indice **n-1** .
 
-**N.B.** ogni posizione dell'array da 0 a n-1 viene assegnata ad una variabile. <u>Non esiste</u> una posizione non assegnata.
+**N.B.** ogni posizione dell'array da 0 a n-1 viene associata ad una variabile. <u>Non esiste</u> una posizione non associata ad uno spazio di memoria.
 
 Per identificare un elemento dell'array si utilizza la seguente notazione: 
 $$
