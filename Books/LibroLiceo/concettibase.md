@@ -9,6 +9,10 @@
 
 
 # Hardware
+## Cos’é un computer
+### Tipi di computer
+## Com’è fatto un computer
+### Schema di Von Neumann
 
 # Software
 ## Software applicativi
