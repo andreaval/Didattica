@@ -112,6 +112,25 @@ Output: esito \in \{Vero,Falso\}\\
 SR: (a<b+c) \land (b<a+c) \land (c<a+b)
 $$
 
+*Analisi - Esempio 4*
+Problema: dato un numero naturale determinarne il precedente e il successivo
+Soluzione:
+$$
+Input: n \in \N\\
+Output: prec,succ \in \N \\ 
+SR: prec=n-1\\
+succ=n+1
+$$
+*Analisi - Esempio 5*
+Problema: dato l'anno di nascita di una persona determinarne l'età
+Soluzione:
+$$
+Input: anno \in \N \enspace|\enspace anno>0\\
+Output: eta \in \N \\ 
+SR: eta = 2018-anno
+$$
+
+
 ## Progettazione dell’algoritmo
 
 Progettare un algoritmo significa, partendo dall'analisi svolta, creare un elenco di istruzione che implementino la strategia risolutiva e permettano all'algoritmo di funzionare con qualsiasi input fornito. 
