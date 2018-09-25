@@ -1,47 +1,120 @@
 # Cos’é un algoritmo
 
-> **Algoritmo:** in inglese *algorithm (/ˈælɡəˌrɪðəm/)*, procedimento che risolve un determinato problema attraverso un numero finito e ordinato di passi (azioni, istruzioni).
+L'informatica, tramite l'uso del computer, ci permette di risolvere problemi del mondo reale. Problemi che senza l'uso del computer non sarebbero risolvibili. 
 
-## Risolutore ed esecutore
+Questo perchè il  computer ha due caratteristiche fondamentali:
+$$
+\text{CAPACITA' DI CALCOLO}+\text{CAPACITA' DI MEMORIZZARE DATI}
+$$
+Rispetto alla mente umana è in grado di svolgere calcoli in maniera enormemente più rapida ed è in grado di memorizzare  dati in quantità teoricamente illimitata.
 
-Il computer ha due importanti caratteristiche: il calcolo e la memorizzazione. Rispetto alla mente umana è in grado di svolgere calcoli in maniera enormemente più rapida ed è in grado di memorizzare una quantità di dati teoricamente illimitata. Tuttavia il computer ha un grande limite: non è in grado di pensare in maniera autonoma; questo significa che **non può** risolvere problemi per cui non è stato programmato.
+Il computer però ha un grande limite: <u>non è in grado di pensare in maniera autonoma</u>; questo significa che non può risolvere problemi che non conosce, problemi per cui non è stato programmato.
 
-> **Il computer risolve unicamente problemi che l'uomo ha già risolto.**Tuttavia lo fa in maniera rapida e precisa, in tempi, in genere, brevissimi.
+Ha quindi bisogno di qualcuno che gli dica come fare. Questo qualcuno è il <u>programmatore</u> (da con confondere con l'utente generico che utilizza il computer).
 
-Il computer è dunque un semplice ESECUTORE di istruzioni che gli sono state impartite da una determinata persona chiamata RISOLUTORE. Entrambe le figure sono indispensabili per la risoluzione rapida e corretta di un problema.
-
- L'ESECUTORE senza il RISOLUTORE non potrebbe mai risolvere un problema perchè non conosce la corretta sequenza di istruzioni da svolgere. Al tempo stesso anche Il RISOLUTORE senza l'ESECUTORE potrebbe non arrivare mai alla soluzione perchè potrebbe impiegare un tempo enorme per svolgere i calcoli richiesti.
-
-> **Programmatore:** persona che insegna al computer a saper fare qualcosa
+> **Programmatore:** in inglese *programmer (/ˈprəʊgræməʳ/)* , *developer (/dɪˈvɛləpə/)*, *software engineer (/ˈsɒftˌwɛə ˌɛndʒɪˈnɪə/)*, persona che insegna al computer a saper fare qualcosa.
 
 $$
 \text{Programmatore} \ne \text{Utente del computer}
 $$
 
-> **Utente del computer:** colui che utilizza il computer, che sa fare qualcosa con esso 
+> **Utente del computer:** in inglese *end user (/ɛnd ˈjuːzə/)*, colui che utilizza il computer, che sa fare qualcosa con esso. 
+
+Il programmatore indica al computer come fare per trovare la soluzione, il computer esegue le istruzioni e risolve il problema. 
+
+> **Il computer risolve unicamente problemi che l'uomo ha già risolto.**Tuttavia lo fa in maniera rapida e precisa.
+
+## Risolutore ed esecutore
+
+Possiamo pensare all'uomo e al computer come a due parti che collaborano insieme per risolvere un problema. In generale queste due figure prendono il nome di RISOLUTORE ed ESECUTORE.
 
 
+
+![Algoritmi15](images/Algoritmi15.png)
+
+
+
+> In generale, **l'esecutore** è colui che esegue in maniera rigorosa le istruzioni che gli sono state impartite dal RISOLUTORE. 
+
+> In generale, **il risolutore** è colui che risolve un problema trovando la giusta sequenza di istruzioni da svolgere per arrivare alla soluzione.
+
+Come è facile capire, RISOLUTORE e ESECUTORE  sono indispensabili uno all'altro ed entrambi concorrono attivamente alla risoluzione del problema.
+
+*Esempio Apollo 13*
+
+## L'algoritmo
+
+Il risolutore per insegnare correttamente all'esecutore a risolvere il problema, ha bisogno di fornirgli un elenco ordinato e ben preciso di azioni da svolgere. Questo elenco prende il nome di **algoritmo**.
+
+> **Algoritmo:** in inglese *algorithm (/ˈælɡəˌrɪðəm/)*, procedimento che risolve un determinato problema attraverso un numero finito e ordinato di passi (azioni, istruzioni).
+
+Un algoritmo per essere definito tale deve possedere le seguenti caratteristiche:
+
+- finitezza
+- non ambiguità
+- generalità
+- efficienza
 
 ## Fasi di risoluzione di un problema
 
+Scrivere un algoritmo per insegnare al computer a "saper fare" qualcosa necessita, in atto pratico, di una serie di operazioni da dover svolgere. L'algoritmo è solo la parte centrale di una serie di attività che permettono al programmatore di risolvere il problema in tutte le sue parti. L'algoritmo viene preceduto da una fase di analisi del problema e viene seguito da una fase di codifica in cui sarà convertito in codice di programmazione per poter dar vita al **software**.
+
 ![Algoritmi10](images/Algoritmi10.png)
 
-| 1. ANALISI                           | 2. ALGORITMO                                              | 3. CODIFICA                                                 |
-| ------------------------------------ | --------------------------------------------------------- | ----------------------------------------------------------- |
-| Identificare i dati in **INPUT**     | Creare l'**algoritmo**                                    | Scrittura del **codice** in un linguaggio di programmazione |
-| Identificare i dati in **OUTPUT**    | Verificare correttezza dell'algoritmo tramite **tracing** | **Compilazione** del codice                                 |
-| Trovare una **strategia risolutiva** |                                                           | **Testing** del codice                                      |
+| 1. ANALISI                            | 2. PROGETTAZIONE                         | 3. CODIFICA                                             |
+| ------------------------------------- | ---------------------------------------- | ------------------------------------------------------- |
+| Identificazione dati in INPUT         | Progettazione e scrittura dell'algoritmo | Scrittura del codice in un linguaggio di programmazione |
+| Identificazione dati in OUTPUT        | Testing dell'algoritmo                   | Compilazione del codice                                 |
+| Creazione di una strategia risolutiva |                                          | Testing del codice                                      |
 
-
+L'analisi produce una **strategia risolutiva** &#8594; in base alla strategia risolutiva si progetta un **algoritmo** &#8594; l'algoritmo viene codificato in un linguaggio di programmazione per ottenere un **software**.
 
 ## L’analisi del problema
 
+Svolgere l'analisi del problema significa innanzitutto <u>capire</u> il problema. Una volta capito il problema è possibile identificarne i dati in INPUT e i dati in OUTPUT  e quindi individuare e descrivere un metodo effettivo di soluzione. 
 
-### Input
+> **Identificare i dati in INPUT:** determinare i parametri del problema.
 
-### Output
-### Strategia risolutiva
+> **Identificare i dati in OUTPUT:** determinare la o le soluzioni del problema (le incognite).
+
+> **Individuare una strategia risolutiva:** saper modelizzare o descrivere una soluzione che permetta di risolvere il problema in maniera corretta.
+
+*Analisi - Esempio 1*
+Problema: date base e altezza di un triangolo determinare l'area.
+Soluzione:
+$$
+Input: b,h \in \R \enspace|\enspace b,h>0\\
+Output: Area \in \R \\ 
+SR: Area = b*h
+$$
+
+
+*Analisi - Esempio 2*
+Problema: date le misure dei lati di un triangolo determinare il tipo di triangolo (scaleno, isoscele, equilatero).
+Soluzione:
+$$
+\begin{align*}
+Input:\enspace a,b,c \in \R \enspace|\enspace a,b,c>0\\
+Output:\enspace tipo \in \{scaleno,isoscele,equilatero\}\\
+SR:\enspace (a=b)\land(b=c) \implies equilatero\\
+   \enspace altrimenti \enspace (a=b)\lor(a=c)\lor(b=c) \implies isoscele\\
+   \enspace altrimenti \implies scaleno
+\end{align*}
+$$
+
+
+*Analisi - Esempio 3*
+Problema: dati tre segmenti determinare se con essi sia possibile costruire un triangolo.
+Soluzione:
+$$
+Input: a,b,c \in \R \enspace|\enspace a,b,c>0\\
+Output: esito \in \{Vero,Falso\}\\
+SR: (a<b+c) \land (b<a+c) \land (c<a+b)
+$$
+
 ## Progettazione dell’algoritmo
+
+Progettare un algoritmo significa, partendo dall'analisi svolta, creare un elenco di istruzione che implementino la strategia risolutiva e permettano all'algoritmo di funzionare con qualsiasi input fornito. 
 
 
 ## Codifica tramite linguaggio di programmazione
@@ -104,7 +177,7 @@ Nella maggior parte dei linguaggi di programmazione al primo elemento di un arra
 
 Un array di lunghezza **n** ($n \in \mathbb{ N_{0} }$) è un array composto da **n** elementi dove il primo elemento avrà indice **0** mentre l'ultimo avrà indice **n-1** .
 
-**N.B.** ogni posizione dell'array da 0 a n-1 viene associata ad una variabile. <u>Non esiste</u> una posizione non associata ad uno spazio di memoria.
+**N.B.** ogni posizione dell'array da 0 a n-1 viene associata ad una variabile. <u>Non esiste</u> una posizione non associata ad alcuna variabile.
 
 Per identificare un elemento dell'array si utilizza la seguente notazione: 
 $$
