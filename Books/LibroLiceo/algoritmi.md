@@ -109,7 +109,8 @@ Soluzione:
 $$
 Input: a,b,c \in \R \enspace|\enspace a,b,c>0\\
 Output: esito \in \{Vero,Falso\}\\
-SR: (a<b+c) \land (b<a+c) \land (c<a+b)
+SR: (a<b+c) \land (b<a+c) \land (c<a+b) \implies Vero \\
+altrimenti  \implies Falso
 $$
 
 *Analisi - Esempio 4*
@@ -129,7 +130,6 @@ Input: anno \in \N \enspace|\enspace anno>0\\
 Output: eta \in \N \\ 
 SR: eta = 2018-anno
 $$
-
 
 ## Progettazione dell’algoritmo
 
@@ -233,6 +233,14 @@ Il seguente flowchart, mostra un esempio di inizializzazione di un array di inte
 ### Quando è utile utilizzare un array?
 
 
+
+##### Exx - Inversione elementi di un array
+
+Dato un array di 10 numeri interi inseriti dall'utente, creare un algoritmo che inverta i valori degli elementi (il primo con l'ultimo, il secondo con il penultimo, ecc.)
+
+![Algoritmo210](images/Algoritmo210.png)
+
+N.B. all'interno della seconda iterazione viene effettuato lo **scambio** **di valori** tra 2 variabili (in questo caso 2 elementi dell'array). Si consiglia di rivedersi l'algoritmo Exx "Scambio di valori tra due variabili".
 
 # Esercizi
 
