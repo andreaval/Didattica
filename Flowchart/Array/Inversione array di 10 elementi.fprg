@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Inversione di un array di 10 elementi"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-09-26 09.36.09 "/>
+        <attribute name="created" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTgtMDktMjY7IjA5LjMwLjE5ICI7Mjc5OA=="/>
+        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTgtMDktMjY7IjA5LjM2LjA5ICI7MTsyOTEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="True" size="10"/>
+            <declare name="I, T" type="Integer" array="False" size=""/>
+            <assign variable="I" expression="0"/>
+            <while expression="I&lt;10">
+                <input variable="A[I]"/>
+                <assign variable="I" expression="I+1"/>
+            </while>
+            <assign variable="I" expression="0"/>
+            <while expression="I&lt;5">
+                <assign variable="T" expression="A[I]"/>
+                <assign variable="A[I]" expression="A[9-I]"/>
+                <assign variable="A[9-I]" expression="T"/>
+                <assign variable="I" expression="I+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
