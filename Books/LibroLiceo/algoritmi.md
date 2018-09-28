@@ -232,7 +232,15 @@ Il seguente flowchart, mostra un esempio di inizializzazione di un array di inte
 
 ### Quando è utile utilizzare un array?
 
+In generale l'utilizzo di un array  è conveniente o indispensabile quando si ha la necessità di gestire un gruppo di variabili che assolvono ad un compito comune. Il vantaggio di utilizzare l'array è dato dal fatto che possiamo gestire in maniera dinamica l'accesso alle variabili ottimizzando in maniera rilevante la scrittura dell'algoritmo.
 
+Ipotizziamo ad esempio di dover contare i numeri usciti lanciando per 100 volte un dado a 4 facce. Proviamo a creare un algoritmo senza l'utilizzo degli array, utilizzando esclusivamente variabili scalari. Il risultato è il seguente:
+
+![Algoritmo195](images/Algoritmo195.png)
+
+Osservando il flowchart sopra, si può notare come vengano utilizzate 4 variabili che assolvono tutte allo stesso compito (essere dei contatori). In questo caso l'utilizzo di un'array permette di sostituire le 4 variabili e di ottenere una scrittura molto più concisa dell'algoritmo:
+
+![Algoritmo196](images/Algoritmo196.png)
 
 ##### Exx - Inversione elementi di un array
 
@@ -240,7 +248,11 @@ Dato un array di 10 numeri interi inseriti dall'utente, creare un algoritmo che 
 
 ![Algoritmo210](images/Algoritmo210.png)
 
-N.B. all'interno della seconda iterazione viene effettuato lo **scambio** **di valori** tra 2 variabili (in questo caso 2 elementi dell'array). Si consiglia di rivedersi l'algoritmo Exx "Scambio di valori tra due variabili".
+N.B. all'interno della seconda iterazione viene effettuato lo **scambio** **di valori** **tra 2 variabili** (in questo caso 2 elementi dell'array). Si consiglia di rivedersi l'algoritmo Exx "Scambio di valori tra due variabili".
+
+Generalizzando il problema appena proposto possiamo creare un algoritmo che inverta un array di N elementi. In questo caso è comodo utilizzare due indici per tenere traccia degli elementi da scambiare.
+
+![Algoritmo211](images/Algoritmo211.png)
 
 # Esercizi
 
