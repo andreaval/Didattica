@@ -1,27 +1,25 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="2.11">
     <attributes>
-        <attribute name="name" value=""/>
-        <attribute name="authors" value="a_vallorani"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2018-05-08 01:00:53 PM"/>
+        <attribute name="name" value="Conteggio esito lanci di un dado"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v2"/>
+        <attribute name="saved" value="2018-09-28 06:34:06 PM"/>
         <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDUtMDg7MTI6MDk6MjQgUE07MzcxNA=="/>
         <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDUtMDg7MDE6MDA6NTMgUE07MTszODEz"/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDktMjg7MDY6MzQ6MDYgUE07MjsyNjE1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="I, N" type="Integer" array="False" size=""/>
-            <declare name="LANCI" type="Integer" array="True" size="6"/>
-            <for variable="I" start="0" end="5" direction="inc" step="1">
-                <assign variable="LANCI[I]" expression="0"/>
+            <declare name="I, V" type="Integer" array="False" size=""/>
+            <declare name="D" type="Integer" array="True" size="4"/>
+            <for variable="I" start="0" end="3" direction="inc" step="1">
+                <assign variable="D[I]" expression="0"/>
             </for>
             <for variable="I" start="1" end="100" direction="inc" step="1">
-                <assign variable="N" expression="RANDOM(6)"/>
-                <assign variable="LANCI[N]" expression="LANCI[N]+1"/>
-            </for>
-            <for variable="I" start="0" end="5" direction="inc" step="1">
-                <output expression="LANCI[I]" newline="True"/>
+                <assign variable="V" expression="RANDOM(4)"/>
+                <assign variable="D[V]" expression="D[V]+1"/>
             </for>
         </body>
     </function>
