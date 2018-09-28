@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andrea"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-28 11:48:19 PM"/>
+        <attribute name="created" value="YW5kcmVhO1dISVRFLVdJTjc7MjAxOC0wOS0yODsxMToyNDo0OSBQTTsyNjM3"/>
+        <attribute name="edited" value="YW5kcmVhO1dISVRFLVdJTjc7MjAxOC0wOS0yODsxMTo0ODoxOSBQTTsxOzI3NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, I, J, M, X, MAX, FOUND" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <declare name="A" type="Integer" array="True" size="N"/>
+            <assign variable="A[0]" expression="RANDOM(5)"/>
+            <for variable="I" start="1" end="N-1" direction="inc" step="1">
+                <do expression="A[I-1]&gt;A[I]">
+                    <assign variable="MAX" expression="5*I"/>
+                    <assign variable="A[I]" expression="RANDOM(MAX)"/>
+                </do>
+            </for>
+            <input variable="X"/>
+            <assign variable="FOUND" expression="0"/>
+            <assign variable="I" expression="0"/>
+            <assign variable="J" expression="N-1"/>
+            <while expression="I&lt;=J &amp;&amp; FOUND==0">
+                <assign variable="M" expression="(I+J)/2"/>
+                <if expression="A[M]==X">
+                    <then>
+                        <assign variable="FOUND" expression="1"/>
+                    </then>
+                    <else>
+                        <if expression="X&gt;A[M]">
+                            <then>
+                                <assign variable="I" expression="M+1"/>
+                            </then>
+                            <else>
+                                <assign variable="J" expression="M-1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <if expression="FOUND==1">
+                <then>
+                    <output expression="&quot;Trovato in posizione &quot;&amp;M" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Non trovato&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
