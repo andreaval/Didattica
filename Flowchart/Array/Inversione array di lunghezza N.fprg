@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Inversione elementi di un array di lunghezza N"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-09-28 04:06:08 PM"/>
+        <attribute name="created" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDktMjg7MDQ6MDA6MjIgUE07MjQ5NQ=="/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDktMjg7MDQ6MDY6MDggUE07MTsyNjEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, I, J, T" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <declare name="A" type="Integer" array="True" size="N"/>
+            <for variable="I" start="0" end="N-1" direction="inc" step="1">
+                <input variable="A[I]"/>
+            </for>
+            <assign variable="I" expression="0"/>
+            <assign variable="J" expression="N-1"/>
+            <while expression="I&lt;J">
+                <assign variable="T" expression="A[I]"/>
+                <assign variable="A[I]" expression="A[J]"/>
+                <assign variable="A[J]" expression="T"/>
+                <assign variable="I" expression="I+1"/>
+                <assign variable="J" expression="J-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
