@@ -4,9 +4,9 @@
         <attribute name="name" value="Conteggio esito lanci di un dado a 4 facce senza array"/>
         <attribute name="authors" value="Andrea Vallorani"/>
         <attribute name="about" value="v1"/>
-        <attribute name="saved" value="2018-09-28 06:31:12 PM"/>
+        <attribute name="saved" value="2018-09-28 06:38:04 PM"/>
         <attribute name="created" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDktMjg7MDY6MjQ6NDYgUE07MjUwOQ=="/>
-        <attribute name="edited" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDktMjg7MDY6MzE6MTIgUE07MTsyNjA4"/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDktMjg7MDY6Mzg6MDQgUE07MzsyNjE4"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -17,7 +17,7 @@
             <assign variable="D3" expression="0"/>
             <assign variable="D4" expression="0"/>
             <for variable="I" start="1" end="100" direction="inc" step="1">
-                <assign variable="V" expression="RANDOM(6)+1"/>
+                <assign variable="V" expression="RANDOM(4)+1"/>
                 <if expression="V==1">
                     <then>
                         <assign variable="D1" expression="D1+1"/>
