@@ -114,11 +114,11 @@ altrimenti  \implies Falso
 $$
 
 *Analisi - Esempio 4*
-Problema: dato un numero naturale determinarne il precedente e il successivo
+Problema: dato un numero intero determinarne il precedente e il successivo
 Soluzione:
 $$
-Input: n \in \N\\
-Output: prec,succ \in \N \\ 
+Input: n \in \mathbb{Z}\\
+Output: prec,succ \in \mathbb{Z}\\ 
 SR: prec=n-1\\
 succ=n+1
 $$
@@ -126,8 +126,8 @@ $$
 Problema: dato l'anno di nascita di una persona determinarne l'età
 Soluzione:
 $$
-Input: anno \in \N \enspace|\enspace anno>0\\
-Output: eta \in \N \\ 
+Input: anno \in  \mathbb{N}\enspace|\enspace anno>1900\\
+Output: eta \in \mathbb{N}\enspace|\enspace anno>0\\ 
 SR: eta = 2018-anno
 $$
 
