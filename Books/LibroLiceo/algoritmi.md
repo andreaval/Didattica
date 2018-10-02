@@ -73,14 +73,16 @@ L'analisi produce una **strategia risolutiva** &#8594; in base alla strategia ri
 
 Svolgere l'analisi del problema significa innanzitutto <u>capire</u> il problema. Una volta capito il problema è possibile identificarne i dati in INPUT e i dati in OUTPUT  e quindi individuare e descrivere un metodo effettivo di soluzione. 
 
-> **Identificare i dati in INPUT:** determinare i parametri del problema.
+> **Identificare i dati in INPUT:** determinare i parametri del problema ovvero tutte le variabili da valorizzare con i dati iniziali.
 
 > **Identificare i dati in OUTPUT:** determinare la o le soluzioni del problema (le incognite).
 
 > **Individuare una strategia risolutiva:** saper modelizzare o descrivere una soluzione che permetta di risolvere il problema in maniera corretta.
 
+Per ogni variabile coinvolta è bene determinarne il dominio in modo da specificare i valori accettati.
+
 *Analisi - Esempio 1*
-Problema: date base e altezza di un triangolo determinare l'area.
+Problema: avendo base e altezza di un triangolo determinare l'area.
 Soluzione:
 $$
 Input: b,h \in \R \enspace|\enspace b,h>0\\
@@ -88,13 +90,12 @@ Output: Area \in \R \\
 SR: Area = b*h
 $$
 
-
 *Analisi - Esempio 2*
 Problema: date le misure dei lati di un triangolo determinare il tipo di triangolo (scaleno, isoscele, equilatero).
 Soluzione:
 $$
 \begin{align*}
-Input:\enspace a,b,c \in \R \enspace|\enspace a,b,c>0\\
+Input:\enspace a,b,c \in \mathbb{R} \enspace|\enspace a,b,c>0\\
 Output:\enspace tipo \in \{scaleno,isoscele,equilatero\}\\
 SR:\enspace (a=b)\land(b=c) \implies equilatero\\
    \enspace altrimenti \enspace (a=b)\lor(a=c)\lor(b=c) \implies isoscele\\
@@ -107,7 +108,7 @@ $$
 Problema: dati tre segmenti determinare se con essi sia possibile costruire un triangolo.
 Soluzione:
 $$
-Input: a,b,c \in \R \enspace|\enspace a,b,c>0\\
+Input: a,b,c \in \mathbb{R} \enspace|\enspace a,b,c>0\\
 Output: esito \in \{Vero,Falso\}\\
 SR: (a<b+c) \land (b<a+c) \land (c<a+b) \implies Vero \\
 altrimenti  \implies Falso
@@ -126,14 +127,25 @@ $$
 Problema: dato l'anno di nascita di una persona determinarne l'età
 Soluzione:
 $$
-Input: anno \in  \mathbb{N}\enspace|\enspace anno>1900\\
+Input: annoC,annoN \in \mathbb{N}\enspace|\enspace anno>1900\\
 Output: eta \in \mathbb{N}\enspace|\enspace anno>0\\ 
-SR: eta = 2018-anno
+SR: eta = annoC-annoN
 $$
+
+*Analisi - Esempio 6*
+Problema: calcolare la somma di tutti i numeri naturali compresi tra 1 e 100, estremi inclusi.
+$$
+Input: -\\
+Output: somma \in \mathbb{N}\enspace|\enspace anno>0\\
+SR:somma = {(1+100)*100 \over 2}
+$$
+N.B. questo esempio prende spunto dal famoso problema del piccolo Gauss. Si noti che non esistono parametri in Input in quanto i valori 1 e 100, che potrebbero essere confusi come valori di Input, sono in realtà valori costanti del problema e non variabili. Per avere dati in input bisogna riformulare il problema nel seguente modo: calcolare la somma di tutti i numeri compresi tra 1 e N.
+
+
 
 ## Progettazione dell’algoritmo
 
-Progettare un algoritmo significa, partendo dall'analisi svolta, creare un elenco di istruzione che implementino la strategia risolutiva e permettano all'algoritmo di funzionare con qualsiasi input fornito. 
+Progettare un algoritmo significa creare un elenco ordinato di istruzioni comprensibili dall'esecutore che implementino la strategia risolutiva. 
 
 
 ## Codifica tramite linguaggio di programmazione
