@@ -29,9 +29,7 @@ Il programmatore indica al computer come fare per trovare la soluzione, il compu
 Possiamo pensare all'uomo e al computer come a due parti che collaborano insieme per risolvere un problema. In generale queste due figure prendono il nome di RISOLUTORE ed ESECUTORE.
 
 
-
 ![Algoritmi15](images/Algoritmi15.png)
-
 
 
 > In generale, **l'esecutore** è colui che esegue in maniera rigorosa le istruzioni che gli sono state impartite dal RISOLUTORE. 
@@ -46,6 +44,9 @@ Come è facile capire, RISOLUTORE e ESECUTORE  sono indispensabili uno all'altro
 
 Il risolutore per insegnare correttamente all'esecutore a risolvere il problema, ha bisogno di fornirgli un elenco ordinato e ben preciso di azioni da svolgere. Questo elenco prende il nome di **algoritmo**.
 
+> “Che cos’è un algoritmo? Si mangia?» chiese Lori. «Cosa? No, è solo un modo elegante di dire “come si fa qualcosa”.”
+
+-
 > **Algoritmo:** in inglese *algorithm (/ˈælɡəˌrɪðəm/)*, procedimento che risolve un determinato problema attraverso un numero finito e ordinato di passi (azioni, istruzioni).
 
 Un algoritmo per essere definito tale deve possedere le seguenti caratteristiche:
