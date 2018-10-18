@@ -1,5 +1,5 @@
 # Cos’é un algoritmo
-
+ 
 L'informatica, tramite l'uso del computer, ci permette di risolvere problemi del mondo reale. Problemi che senza l'uso del computer non sarebbero risolvibili. 
 
 Questo perchè il  computer ha due caratteristiche fondamentali:
