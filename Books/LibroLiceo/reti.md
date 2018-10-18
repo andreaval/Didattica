@@ -3,7 +3,6 @@
 > **Rete di computer:** in inglese *network (/ˈnɛtˌwɜːk/)*, è un sistema di comunicazione che permettte l'interconnesione di strutture informatiche distribuite su aree geografiche di qualsiasi ampiezza.
 
 
-
 ![reti001](images/reti001.png)
 
 > **Host:** qualsiasi computer o dispositivo informatico connesso ad una rete telematica
