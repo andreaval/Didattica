@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="2.11">
     <attributes>
-        <attribute name="name" value=""/>
-        <attribute name="authors" value="a_vallorani"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2018-10-20 12:14:44 PM"/>
+        <attribute name="name" value="Massimo tra 3 numeri (senza selezioni annidate)"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-10-21 06.21.01 "/>
         <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMTAtMjA7MTA6MzY6MjQgQU07MzY4Nw=="/>
         <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMTAtMjA7MTI6MTQ6NDQgUE07MTszODEw"/>
+        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTgtMTAtMjE7IjA2LjIxLjAxICI7MjsyODgy"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -29,7 +30,7 @@
                 </then>
                 <else/>
             </if>
-            <output expression="N3" newline="True"/>
+            <output expression="MAX" newline="True"/>
         </body>
     </function>
 </flowgorithm>
