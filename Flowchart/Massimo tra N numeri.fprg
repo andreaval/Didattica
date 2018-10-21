@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Massimo tra N numeri"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-10-21 07.06.11 "/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMTAtMjA7MTA6MzY6MjQgQU07MzY4Nw=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMTAtMjA7MTI6MTQ6NDQgUE07MTszODEw"/>
+        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTgtMTAtMjE7IjA3LjA2LjExICI7NDsyODg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NUM, MAX" type="Real" array="False" size=""/>
+            <declare name="N, I" type="Integer" array="False" size=""/>
+            <do expression="N&lt;2">
+                <input variable="N"/>
+            </do>
+            <input variable="NUM"/>
+            <assign variable="MAX" expression="NUM"/>
+            <assign variable="I" expression="1"/>
+            <while expression="I&lt;N">
+                <input variable="NUM"/>
+                <if expression="NUM&gt;MAX">
+                    <then>
+                        <assign variable="MAX" expression="NUM"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="I" expression="I+1"/>
+            </while>
+            <output expression="MAX" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
