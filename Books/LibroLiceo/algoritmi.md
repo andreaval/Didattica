@@ -1,5 +1,5 @@
 # Cos’é un algoritmo
-
+ 
 L'informatica, tramite l'uso del computer, ci permette di risolvere problemi del mondo reale. Problemi che senza l'uso del computer non sarebbero risolvibili. 
 
 Questo perchè il  computer ha due caratteristiche fondamentali:
@@ -44,8 +44,9 @@ Come è facile capire, RISOLUTORE e ESECUTORE  sono indispensabili uno all'altro
 
 Il risolutore per insegnare correttamente all'esecutore a risolvere il problema, ha bisogno di fornirgli un elenco ordinato e ben preciso di azioni da svolgere. Questo elenco prende il nome di **algoritmo**.
 
-Che cos’è un algoritmo? Si mangia?» chiese Lori. «Cosa? No, è solo un modo elegante di dire “come si fa qualcosa”.
+> “Che cos’è un algoritmo? Si mangia?» chiese Lori. «Cosa? No, è solo un modo elegante di dire “come si fa qualcosa”.”
 
+-
 > **Algoritmo:** in inglese *algorithm (/ˈælɡəˌrɪðəm/)*, procedimento che risolve un determinato problema attraverso un numero finito e ordinato di passi (azioni, istruzioni).
 
 Un algoritmo per essere definito tale deve possedere le seguenti caratteristiche:
@@ -57,19 +58,19 @@ Un algoritmo per essere definito tale deve possedere le seguenti caratteristiche
 
 ## Fasi di risoluzione di un problema
 
-Scrivere un algoritmo per insegnare al computer a "saper fare" qualcosa necessita, in atto pratico, di una sequenza di passaggi da dover svolgere. L'algoritmo è solo la parte centrale di una serie di attività che permettono al programmatore di risolvere il problema in tutte le sue parti. L'algoritmo viene preceduto da una fase di analisi del problema e viene seguito da una fase di codifica in cui sarà convertito in codice di programmazione per poter dar vita al **software**.
+Scrivere un algoritmo per insegnare al computer a "saper fare" qualcosa necessita, in atto pratico, di una serie di operazioni da dover svolgere. L'algoritmo è solo la parte centrale di una serie di attività che permettono al programmatore di risolvere il problema in tutte le sue parti. L'algoritmo viene preceduto da una fase di analisi del problema e viene seguito da una fase di codifica in cui sarà convertito in codice di programmazione per poter dar vita al **software**.
 
 ![Algoritmi10](images/Algoritmi10.png)
 
-| 1. ANALISI                            | 2. PROGETTAZIONE                                             | 3. CODIFICA                                             |
-| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------- |
-| Identificazione dati in INPUT         | Progettazione e scrittura dell'algoritmo (flowchart o pseudocodifica) | Scrittura del codice in un linguaggio di programmazione |
-| Identificazione dati in OUTPUT        | Test dell'algoritmo (tracing)                                | Compilazione del codice                                 |
-| Creazione di una strategia risolutiva |                                                              | Testing del codice                                      |
+| 1. ANALISI                            | 2. PROGETTAZIONE                         | 3. CODIFICA                                             |
+| ------------------------------------- | ---------------------------------------- | ------------------------------------------------------- |
+| Identificazione dati in INPUT         | Progettazione e scrittura dell'algoritmo | Scrittura del codice in un linguaggio di programmazione |
+| Identificazione dati in OUTPUT        | Testing dell'algoritmo                   | Compilazione del codice                                 |
+| Creazione di una strategia risolutiva |                                          | Testing del codice                                      |
 
 L'analisi produce una **strategia risolutiva** &#8594; in base alla strategia risolutiva si progetta un **algoritmo** &#8594; l'algoritmo viene codificato in un linguaggio di programmazione per ottenere un **software**.
 
-# L'analisi del problema
+## L’analisi del problema
 
 Svolgere l'analisi del problema significa innanzitutto <u>capire</u> il problema. Una volta capito il problema è possibile identificarne i dati in INPUT e i dati in OUTPUT  e quindi individuare e descrivere un metodo effettivo di soluzione. 
 
@@ -141,111 +142,24 @@ SR:somma = {(1+100)*100 \over 2}
 $$
 N.B. questo esempio prende spunto dal famoso problema del piccolo Gauss. Si noti che non esistono parametri in Input in quanto i valori 1 e 100, che potrebbero essere confusi come valori di Input, sono in realtà valori costanti del problema e non variabili. Per avere dati in input bisogna riformulare il problema nel seguente modo: calcolare la somma di tutti i numeri compresi tra 1 e N.
 
-# Progettare un algoritmo
 
-Progettare un algoritmo significa creare, sulla base dell'analisi svolta, un elenco ordinato di istruzioni comprensibili dall'esecutore che implementino la strategia risolutiva. 
 
-L'algoritmo si rappresenta in genere tramite il formalismo grafico del **flow chart** (/fləʊ tʃɑːt/) (in italiano "diagramma di flusso") o tramite un linguaggio chiamato di pseudo codifica. In questo testo faremo esclusivamente uso dei flowchart.
+## Progettazione dell’algoritmo
+
+Progettare un algoritmo significa creare un elenco ordinato di istruzioni comprensibili dall'esecutore che implementino la strategia risolutiva. 
+
+
+## Codifica tramite linguaggio di programmazione
+
+# Scrivere un algoritmo
+
+L'algoritmo si rappresenta in genere tramite il formalismo grafico del **Flow chart** (/fləʊ tʃɑːt/) (in italiano Diagramma di flusso)
 
 ## I flowchart
 
-> **Flowchart:** *(/fləʊ tʃɑːt/)* un flowchart è un metodo grafico per rappresentare algoritmi. Combina forme grafiche con descrizioni testuali. La <u>forma</u> rappresenta il tipo di istruzione. Il <u>testo</u> descrive come svolgere l'istruzione.
-
 ### Elementi di un flowchart
-
-- **Dichiarazione** La dichiarazione serve per indicare al risolutore quali saranno le variabili utilizzate all'interno dell'algoritmo ed il rispettivo dominio di ogni variabile.
-
 ### Regole per la costruzione di un flowchart
-
-- in ogni figura entra sempre una e una sola freccia, unica eccezione è l'elemento iniziale da cui non entra nessuna freccia
-- da ogni figura esce sempre una ed una sola freccia, ad eccezione dell'elemento finale da cui non esce nessuna freccia e dalle condizioni da cui escono due frecce
-
-#### **E1** - Area di un rettangolo
-
-*Problema:* date le misure dei lati, calcolare l'area di un rettangolo.
-
-##### Analisi
-
-$$
-I: b,h \in \R \enspace|\enspace b,h>0 \\O: A \in \R \\S: A = b*h
-$$
-
-
-##### Algoritmo				
-
-![FlowchartE1a](images/flowchart/FlowchartE1a.png)
-
-##### Tabella di traccia (tracing)
-
-In <span style="color:green">verde</span> i valori dati in input. In <span style="color:red">rosso</span> il valore dato in output.
-$$
-\begin{array}{c|c|c}
-b & h & A \\ \hline
-\color{green}{3} & \color{green}{4} & \color{red}{12} \\ \hline
-\color{green}{3} & \color{green}{-4} & \color{red}{-12} \\ \hline
-\color{green}{0} & \color{green}{-4} & \color{red}{0}
-\end{array}
-$$
-
-N.B. Sebbene nell'analisi siano stati esclusi eventuali valori non positivi, nell'algoritmo non è stato inserito un controllo per evitarne l'inserimento. Più avanti vedremo come fare per aggiungere tale controllo.
-
-#### E2 - Prezzo scontato
-
-*Problema:* dato un prezzo e la percentuale di sconto da applicare, calcolare il prezzo scontato.
-
-##### Analisi
-
-$$
-I: prezzo,perc \in \Q \enspace|\enspace prezzo,perc>0 
-\\O: prezzoScontato \in \Q 
-\\S: prezzoScontato = prezzo-(\frac{prezzo*perc}{100})
-\\ {\small oppure} \enspace prezzoScontato = prezzo*(1-\frac{perc}{100})
-$$
-
-##### Algoritmo
-
-![FlowchartE2a](images/flowchart/FlowchartE2a.png)
-
-Rispetto all'algoritmo E1, è stata utilizzata anche la figura della **dichiarazione**. Nella scrittura di un algoritmo su carta, la dichiarazione può anche essere tralasciata. Tuttavia diventa necessaria quando andiamo a codificare l'algoritmo per eseguirlo al computer.
-
-### Le variabili
-
-La necessità di generalizzare l'algoritmo ci obbliga all'uso delle variabili. 
-
-Un algoritmo può far uso di una o più variabili a seconda del problema che dovrà risolvere. Non c'è un limite teorico al numero di variabili utilizzabili, tuttavia per rendere un algoritmo efficiente è bene adoperare il minor numero possibile di variabili. Questo permette di ottimizzare l'uso delle risorse e in alcuni casi di velocizzare l'esecuzione dell'algoritmo.
-
-> **Variabile:** in inglese *variable* *(/ˈvɛəriəbəl/)*, è un contenitore in grado di memorizzare uno e un solo dato. La variabile, durante l'esecuzione dell'algoritmo, può cambiare il suo contenuto anche più volte. Ad ogni variabile viene assegnato un nome che la identifica in maniera univoca all'interno dell'algoritmo.
-
-> **Assegnazione:**in inglese *assignment (/əˈsaɪnmənt/)*, è un'operazione di scrittura di un dato all'interno di una variabile. L'operazione di assegnazione <u>elimina</u> eventuali altri dati presenti nella variabile.
-
-#### Operatore di assegnazione (=)
-
-Per scrivere un dato all'interno di una variabile si utilizza l'operatore di assegnamento o assegnazione, indicato con il simbolo di uguale ( $=$ ) . 
-
-**N.B.** L'operatore di assegnazione <u>**non**</u> deve essere confuso con l'operatore relazionale di uguaglianza. L'assegnamento modifica il valore di una variabile, mentre l'uguaglianza verifica se due espressioni hanno lo stesso 
-valore.
-
-L'operatore di assegnazione è un operatore binario che <u>**non**</u> gode della proprietà commutativa: la posizione dei due operandi (l'operando di sinistra e l'operando di destra) non può essere scambiata senza cambiare il significato dell'operazione. Questo perchè l'operatore ha un solo metodo di funzionamento: <u>memorizza il valore dell'operando di destra all'interno dell'operando di sinistra</u>.
-
-**N.B.** l'operando di sinistra è in genere una variabile, mentre l'operando di destra può essere un valore statico, una variabile o un'espressione.
-
-Es. 
-$$
-x = 3 \\
-x = y \\
-x = y-3 \\
-x = x+1
-$$
-Alcuni linguaggi e formalismi, per indicare l'operatore di assegnazione, utilizzano al posto dell'uguale altri simboli meno equivoci. Ad esempio due punti uguale ($:=$) o il simbolo freccia (&#8592;). In questi esercizi si preferisce utilizzare il simbolo dell'uguale perchè è il simbolo utilizzato nei principali linguaggi di programmazione.
-
-> **Dichiarazione:** in inglese *declare* (/d*ɪ*ˈklɛər/), è l'operazione che indica al risolutore (il computer) quali saranno le variabili utilizzate all'interno dell'algoritmo ed il rispettivo dominio di ogni variabile. In fase di dichiarazione le variabili vengono create ma non contengono alcun valore (sono nello stato "non inizilizzato" <u>uninitialized</u>). 
-
-> **Inizializzazione:**in inglese *initialize (/ɪˈnɪʃəlaɪz/)*, indica il primo valore assegnato ad una variabile. In pratica l'inizializzazione è la prima operazione di assegnamento effettuata in ogni variabile.
-
-**N.B.** un classico errore che si verifica nella scrittura di algoritmi è quello di utilizzare una variabile all'interno di un'espressione senza averla dichiarata: in questo caso si genera un errore di variabile non dichiarata (in inglese **undeclared variable**) . Un altro classico errore è quello di utilizzare una variabile all'interno di un'espressione senza averle assegnato un valore: in questo caso si genera un errore di variabile non inizializzata (in inglese **uninitialized variable**) .
-
 ## La sequenza
-
 ## Operatori matematici
 ### Operatore modulo
 ## Le variabili

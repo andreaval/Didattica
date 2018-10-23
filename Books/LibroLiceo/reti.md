@@ -3,7 +3,6 @@
 > **Rete di computer:** in inglese *network (/ˈnɛtˌwɜːk/)*, è un sistema di comunicazione che permettte l'interconnesione di strutture informatiche distribuite su aree geografiche di qualsiasi ampiezza.
 
 
-
 ![reti001](images/reti001.png)
 
 > **Host:** qualsiasi computer o dispositivo informatico connesso ad una rete telematica
@@ -70,16 +69,28 @@ Per costruire fisicamente una rete di computer dobbiamo avere a disposizione:
 - almeno una scheda di rete per ogni host
 - un canale di comunicazione che permetta la trasmissione dei dati
 - un software in ogni host che "conosca" i protocolli di comunciazione
-- un dispositivo di rete in grado di gestire il canale di comunicazione
+- un dispositivo di rete in grado di gestire il canale di comunicazione (hub,switch)
 
 ## Canali di comunicazione
 
 Il canale di comunicazione o canale trasmissivo è il mezzo utilizzato per collegare gli host di una rete. Esso può essere di 3 tipi:
 
-- elettrico
-- ottico
-- elettromagnetico
+- elettrico (cavi in rame)
+- ottico (fibre ottiche)
+- elettromagnetico (onde radio)
 
 La velocità di trasmissione di un canale di comunicazione viene in genere misurata in b/s (bit al secondo) o sui multipli: Kb/s, Mb/s, Gb/s.
 
-La velocità dichiarata di uno specifico canale (capacità) rappresenta la massima quantità di dati trasportabile. Tuttavia la velocità reale è sempre inferiore alla capacità dichiarata in quanto subentrano vari fattori (ambientali, climatici, umani) che possono creare interferenza nel canale (rumore) e rallentarne la velocità.
+La velocità dichiarata di uno specifico canale (capacità) rappresenta la massima quantità di dati trasportabile. Tuttavia la velocità reale è sempre inferiore alla capacità dichiarata in quanto subentrano vari fattori (ambientali,umani) che possono creare interferenza nel canale (rumore) e rallentarne la velocità.
+
+
+|  b (bit)  | B (Byte) |
+| --- | --- |
+|    |    |
+|    |    |
+|    |    |
+|    |    |
+
+
+
+N.B. Mentre per la misura della velocità si prende come riferimento il bit, per la misura delle memorie del computer si utilizza il Byte simbolo B (1 Byte=8 bit). Nel calcolare i tempi di trasferimento bisogna quindi fare attenzione alla conversione delle unità di misura.
