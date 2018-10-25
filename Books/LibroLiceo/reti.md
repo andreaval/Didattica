@@ -57,9 +57,9 @@ In base al numero di host coinvolti nella comunicazione possiamo distinguere tre
 
 A seconda dell'estensione geografica, si distinguono tre diversi tipi di reti: 
 
-- LAN (Local Area Network)
-- MAN (Metropolitan Area Network)
-- WAN (Wide Area Network)
+- LAN (Local Area Network): rete di computer ad estensione locale. Si sviluppa in genere in una stanza o in un edificio.
+- MAN (Metropolitan Area Network): rete di computer ad estensione urbana. Si sviluppa in un quartiere o in una città.
+- WAN (Wide Area Network): rete di computer ad estensione vasta. Si sviluppa in genere in una provincia, regione o nazione.
 
 ## Struttura di una rete
 
@@ -94,3 +94,17 @@ La velocità dichiarata di uno specifico canale (capacità) rappresenta la massi
 
 
 N.B. Mentre per la misura della velocità si prende come riferimento il bit, per la misura delle memorie del computer si utilizza il Byte simbolo B (1 Byte=8 bit). Nel calcolare i tempi di trasferimento bisogna quindi fare attenzione alla conversione delle unità di misura.
+
+## Costruire un cavo di rete Ethernet
+
+## Switch
+
+Uno **switch** (in inglese 'swɪʧ; *commutatore*) è un dispositivo hardware che permette la connessione di più host ad una rete LAN.
+
+## Router
+
+Dispositivo hardware che permette di connettere tra di loro due o più reti. Il router permette quindi il trasferimento dati tra reti diverse.
+
+## Internet
+
+Internet è una rete di computer ad estensione globale. Tecnicamente è un'interconnessione di reti WAN, MAN e LAN.
