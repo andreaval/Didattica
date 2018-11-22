@@ -3,11 +3,10 @@
     <attributes>
         <attribute name="name" value="Massimo tra 3 numeri (senza selezioni annidate)"/>
         <attribute name="authors" value="Andrea Vallorani"/>
-        <attribute name="about" value="v1"/>
+        <attribute name="about" value="Dati 3 numeri qualsiasi, determinare il valore maggiore."/>
         <attribute name="saved" value="2018-10-21 06.21.01 "/>
         <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMTAtMjA7MTA6MzY6MjQgQU07MzY4Nw=="/>
         <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMTAtMjA7MTI6MTQ6NDQgUE07MTszODEw"/>
-        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTgtMTAtMjE7IjA2LjIxLjAxICI7MjsyODgy"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
