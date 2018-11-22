@@ -28,6 +28,22 @@ int main(){
 	cout << setw(w) << "bool"
 		 << setw(w) << sizeof(bool)
 		 << setw(w) << numeric_limits<bool>::min()
-             << setw(w) << numeric_limits<bool>::max() << endl;
+         << setw(w) << numeric_limits<bool>::max() << endl;
+	cout << setw(w) << "long int"
+		 << setw(w) << sizeof(long int)
+		 << setw(w) << numeric_limits<long int>::min()
+             << setw(w) << numeric_limits<long int>::max() << endl;
+	cout << setw(w) << "short int"
+		 << setw(w) << sizeof(short int)
+		 << setw(w) << numeric_limits<short int>::min()
+             << setw(w) << numeric_limits<short int>::max() << endl;
+	cout << setw(w) << "unsigned int"
+		 << setw(w) << sizeof(unsigned int)
+		 << setw(w) << numeric_limits<unsigned int>::min()
+             << setw(w) << numeric_limits<unsigned int>::max() << endl;
+	cout << setw(w) << "unsigned char"
+		 << setw(w) << sizeof(unsigned char)
+		 << setw(w) << numeric_limits<unsigned char>::min()
+             << setw(w) << numeric_limits<unsigned char>::max() << endl;
 	return 0;
 }
