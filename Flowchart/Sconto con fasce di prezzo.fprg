@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="a_vallorani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-22 10:55:23 AM"/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMTEtMjI7MTA6MjI6MjQgQU07MzY4NQ=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMTEtMjI7MTA6NTU6MjMgQU07MTszNzk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="E10 - Sconti multipli"/>
+            <declare name="TOT, S" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il totale della spesa&quot;" newline="True"/>
+            <input variable="TOT"/>
+            <if expression="TOT&lt;50">
+                <then>
+                    <output expression="&quot;Sconto 0%&quot;" newline="True"/>
+                    <assign variable="S" expression="0"/>
+                </then>
+                <else>
+                    <if expression="TOT&gt;=50 AND TOT&lt;=100">
+                        <then>
+                            <output expression="&quot;Sconto 10%&quot;" newline="True"/>
+                            <assign variable="S" expression="10"/>
+                        </then>
+                        <else>
+                            <if expression="TOT&gt;100 AND TOT&lt;=200">
+                                <then>
+                                    <output expression="&quot;Sconto 20%&quot;" newline="True"/>
+                                    <assign variable="S" expression="20"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Sconto 30%&quot;" newline="True"/>
+                                    <assign variable="S" expression="30"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="TOT" expression="TOT-(TOT*S/100)"/>
+            <output expression="TOT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
