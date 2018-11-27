@@ -3,7 +3,7 @@
     <attributes>
         <attribute name="name" value="Equazione di primo grado"/>
         <attribute name="authors" value="Andrea Vallorani"/>
-        <attribute name="about" value="v1"/>
+        <attribute name="about" value="Risolvere un'equazione lineare di primo grado ad un'incognita espressa in forma canonica (ax+b=0)"/>
         <attribute name="saved" value="2018-01-04 04:54:59 PM"/>
         <attribute name="created" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE3LTExLTIxOyAwNjo1MzoyNiBQTTsgMjkyNw=="/>
         <attribute name="edited" value="YW5kcmVhOyBXSElURS1XSU43LVZNOyAyMDE4LTAxLTA0OyAwNDo1NDo1OSBQTTsgMjkzMw=="/>
@@ -30,7 +30,7 @@
                 </then>
                 <else>
                     <output expression="&quot;Determinata&quot;" newline="True"/>
-                    <output expression="&quot;X=&quot;&amp;(b/a)" newline="True"/>
+                    <output expression="&quot;X=&quot;&amp;(-b/a)" newline="True"/>
                 </else>
             </if>
         </body>
