@@ -4,9 +4,10 @@
         <attribute name="name" value="Somma di due frazioni"/>
         <attribute name="authors" value="Andrea Vallorani"/>
         <attribute name="about" value="v1"/>
-        <attribute name="saved" value="2018-03-06 01:16:56 PM"/>
+        <attribute name="saved" value="2018-11-28 01:13:41 AM"/>
         <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDMtMDY7MTI6NDY6NDYgUE07MzcxNQ=="/>
         <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDMtMDY7MDE6MTY6NTYgUE07MjszODIw"/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxODA0OzIwMTgtMTEtMjg7MDE6MTM6NDEgQU07MTsyNTg1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -27,15 +28,7 @@
             <parameter name="B" type="Integer" array="False"/>
         </parameters>
         <body>
-            <declare name="C, m, r, i" type="Integer" array="False" size=""/>
-            <if expression="A&gt;B">
-                <then>
-                    <assign variable="C" expression="A"/>
-                    <assign variable="A" expression="B"/>
-                    <assign variable="B" expression="C"/>
-                </then>
-                <else/>
-            </if>
+            <declare name="m, r, i" type="Integer" array="False" size=""/>
             <assign variable="i" expression="0"/>
             <do expression="r!=0">
                 <assign variable="i" expression="i+1"/>

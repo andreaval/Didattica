@@ -4,10 +4,11 @@
         <attribute name="name" value="Massimo comun divisore (Algoritmo di Euclide)"/>
         <attribute name="authors" value="Andrea Vallorani"/>
         <attribute name="about" value="v2"/>
-        <attribute name="saved" value="2018-03-10 06.17.03 "/>
+        <attribute name="saved" value="2018-11-28 01:12:00 AM"/>
         <attribute name="created" value="YW5kcmVhO3VidW50dTsyMDE4LTAxLTIzOzA1OjMxOjMxIFBNOzI1Njg="/>
         <attribute name="edited" value="YW5kcmVhO3VidW50dTsyMDE4LTAxLTIzOzA2OjI0OjM3IFBNOzI7MjY4Ng=="/>
         <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTgtMDMtMTA7IjA2LjE3LjAzICI7MTsyODg4"/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxODA0OzIwMTgtMTEtMjg7MDE6MTI6MDAgQU07MTsyNTc5"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -17,14 +18,6 @@
             <input variable="A"/>
             <output expression="&quot;Inserisci secondo numero&quot;" newline="True"/>
             <input variable="B"/>
-            <if expression="B&gt;A">
-                <then>
-                    <assign variable="TEMP" expression="A"/>
-                    <assign variable="A" expression="B"/>
-                    <assign variable="B" expression="TEMP"/>
-                </then>
-                <else/>
-            </if>
             <while expression="B!=0">
                 <assign variable="R" expression="A%B"/>
                 <assign variable="A" expression="B"/>
