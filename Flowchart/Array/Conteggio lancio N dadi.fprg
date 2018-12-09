@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Conteggio esito lanci di un dado"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v2"/>
+        <attribute name="saved" value="2018-12-01 01:33:45 AM"/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDUtMDg7MTI6MDk6MjQgUE07MzcxNA=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDUtMDg7MDE6MDA6NTMgUE07MTszODEz"/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDktMjg7MDY6MzQ6MDYgUE07MjsyNjE1"/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxODA0OzIwMTgtMTItMDE7MDE6MzM6NDUgQU07MTsyNTgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, V, N, T" type="Integer" array="False" size=""/>
+            <do expression="N&lt;=0">
+                <output expression="&quot;Quanti dadi vuoi lanciare?&quot;" newline="True"/>
+                <input variable="N"/>
+            </do>
+            <declare name="D" type="Integer" array="True" size="6"/>
+            <for variable="I" start="0" end="5" direction="inc" step="1">
+                <assign variable="D[I]" expression="0"/>
+            </for>
+            <for variable="I" start="1" end="N" direction="inc" step="1">
+                <assign variable="V" expression="RANDOM(6)"/>
+                <assign variable="D[V]" expression="D[V]+1"/>
+            </for>
+            <for variable="I" start="0" end="5" direction="inc" step="1">
+                <output expression="&quot;Il numero &quot;&amp; (I+1) &amp; &quot; &#232; uscito &quot;&amp;D[I]&amp;&quot; volte&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
