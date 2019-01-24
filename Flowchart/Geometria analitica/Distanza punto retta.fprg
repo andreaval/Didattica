@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Distanza punto retta"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="Creare un algoritmo che, date in input le coordinate del punto A  del piano cartesiano e i coefficienti di una retta scritta in forma implicita, calcoli la distanza di A dalla retta. Calcolare la distanza solo se il punto non appartiene alla retta. Per verificare l'appartenenza e calcolare la distanza usare due apposite funzioni chiamate &quot;pointInRect&quot; e &quot;distancePointRect&quot;.&#13;&#10;Esempi: I=-1,2,4,3,-12 O=2 | I=3,0,4,3,-12 O=appartiene alla retta"/>
+        <attribute name="saved" value="2019-01-24 09.16.05 "/>
+        <attribute name="created" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTktMDEtMjQ7IjA4LjQzLjM1ICI7Mjc5MA=="/>
+        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTktMDEtMjQ7IjA5LjE2LjA1ICI7MTsyODk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="xA, yA, a, b, c, D1" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci coordinate punto A (x,y)&quot;" newline="True"/>
+            <input variable="xA"/>
+            <input variable="yA"/>
+            <output expression="&quot;Inserisci coefficienti retta (ax+by+c=0)&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="!pointInRect(xA,yA,a,b,c)">
+                <then>
+                    <assign variable="D1" expression="distancePointRect(xA,yA,a,b,c)"/>
+                    <output expression="&quot;Distanza da A alla retta: &quot;&amp;D1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Il punto A appartiene alla retta&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="distancePointRect" type="Real" variable="d">
+        <parameters>
+            <parameter name="x" type="Real" array="False"/>
+            <parameter name="y" type="Real" array="False"/>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="c" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="d" type="Real" array="False" size=""/>
+            <assign variable="d" expression="Abs(a*x+b*y+c)/Sqrt(a^2+b^2)"/>
+        </body>
+    </function>
+    <function name="pointInRect" type="Boolean" variable="ok">
+        <parameters>
+            <parameter name="x" type="Real" array="False"/>
+            <parameter name="y" type="Real" array="False"/>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="c" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ok" type="Boolean" array="False" size=""/>
+            <assign variable="ok" expression="(a*x+b*y+c==0)"/>
+        </body>
+    </function>
+</flowgorithm>
