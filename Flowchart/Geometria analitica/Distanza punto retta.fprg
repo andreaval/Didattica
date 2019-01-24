@@ -4,14 +4,14 @@
         <attribute name="name" value="Distanza punto retta"/>
         <attribute name="authors" value="Andrea Vallorani"/>
         <attribute name="about" value="Creare un algoritmo che, date in input le coordinate del punto A  del piano cartesiano e i coefficienti di una retta scritta in forma implicita, calcoli la distanza di A dalla retta. Calcolare la distanza solo se il punto non appartiene alla retta. Per verificare l'appartenenza e calcolare la distanza usare due apposite funzioni chiamate &quot;pointInRect&quot; e &quot;distancePointRect&quot;.&#13;&#10;Esempi: I=-1,2,4,3,-12 O=2 | I=3,0,4,3,-12 O=appartiene alla retta"/>
-        <attribute name="saved" value="2019-01-24 09.16.05 "/>
+        <attribute name="saved" value="2019-01-24 10.22.03 "/>
         <attribute name="created" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTktMDEtMjQ7IjA4LjQzLjM1ICI7Mjc5MA=="/>
-        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTktMDEtMjQ7IjA5LjE2LjA1ICI7MTsyODk2"/>
+        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTktMDEtMjQ7IjEwLjIyLjAzICI7MjsyODg0"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="xA, yA, a, b, c, D1" type="Real" array="False" size=""/>
+            <declare name="xA, yA, a, b, c, D" type="Real" array="False" size=""/>
             <output expression="&quot;Inserisci coordinate punto A (x,y)&quot;" newline="True"/>
             <input variable="xA"/>
             <input variable="yA"/>
@@ -21,8 +21,8 @@
             <input variable="c"/>
             <if expression="!pointInRect(xA,yA,a,b,c)">
                 <then>
-                    <assign variable="D1" expression="distancePointRect(xA,yA,a,b,c)"/>
-                    <output expression="&quot;Distanza da A alla retta: &quot;&amp;D1" newline="True"/>
+                    <assign variable="D" expression="distancePointRect(xA,yA,a,b,c)"/>
+                    <output expression="&quot;Distanza da A alla retta: &quot;&amp;ToFixed(D,2)" newline="True"/>
                 </then>
                 <else>
                     <output expression="&quot;Il punto A appartiene alla retta&quot;" newline="True"/>
