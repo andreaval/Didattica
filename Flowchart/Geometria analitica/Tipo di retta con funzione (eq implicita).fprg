@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-01-31 10.08.53 "/>
+        <attribute name="created" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTktMDEtMzE7IjA5LjU0LjM2ICI7Mjc5Mg=="/>
+        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTktMDEtMzE7IjEwLjA4LjUzICI7MjsyODkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <declare name="tipo" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="tipo" expression="tipoRetta(a,b,c)"/>
+            <output expression="tipo" newline="True"/>
+        </body>
+    </function>
+    <function name="tipoRetta" type="String" variable="t">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="c" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="t" type="String" array="False" size=""/>
+            <declare name="m" type="Real" array="False" size=""/>
+            <if expression="a==0">
+                <then>
+                    <if expression="b==0">
+                        <then>
+                            <assign variable="t" expression="&quot;non &#232; una retta&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="t" expression="&quot;orizzontale&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b==0">
+                        <then>
+                            <assign variable="t" expression="&quot;verticale&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="m" expression="-a/b"/>
+                            <if expression="m&gt;0">
+                                <then>
+                                    <assign variable="t" expression="&quot;obliqua crescente&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="t" expression="&quot;obliqua decrescente&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

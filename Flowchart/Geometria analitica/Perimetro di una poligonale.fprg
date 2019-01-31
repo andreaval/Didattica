@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-01-31 09.43.07 "/>
+        <attribute name="created" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTktMDEtMzE7IjA5LjIxLjE1ICI7Mjc4Mw=="/>
+        <attribute name="edited" value="YW5kcmU7REVTS1RPUC1TNFFIVENJOzIwMTktMDEtMzE7IjA5LjQzLjA3ICI7MTsyODk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="xS, yS, xP, yP, xP2, yP2, dTot" type="Real" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="dTot" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <input variable="xS"/>
+            <input variable="yS"/>
+            <do expression="xS!=xP2 &amp;&amp; yS!=yP2">
+                <if expression="n&gt;0">
+                    <then>
+                        <assign variable="xP" expression="xP2"/>
+                        <assign variable="yP" expression="yP2"/>
+                    </then>
+                    <else>
+                        <assign variable="xP" expression="xS"/>
+                        <assign variable="yP" expression="yS"/>
+                    </else>
+                </if>
+                <input variable="xP2"/>
+                <input variable="yP2"/>
+                <assign variable="dTot" expression="dTot+dist(xP,yP,xP2,yP2)"/>
+                <assign variable="n" expression="n+1"/>
+            </do>
+            <output expression="&quot;Numero di segmenti: &quot; &amp; n" newline="True"/>
+            <output expression="&quot;Lunghezza percorso: &quot; &amp; dTot" newline="True"/>
+        </body>
+    </function>
+    <function name="dist" type="Real" variable="d">
+        <parameters>
+            <parameter name="xA" type="Real" array="False"/>
+            <parameter name="yA" type="Real" array="False"/>
+            <parameter name="xB" type="Real" array="False"/>
+            <parameter name="yB" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="d" type="Real" array="False" size=""/>
+            <assign variable="d" expression="Sqrt((xB-xA)^2+(yB-yA)^2)"/>
+        </body>
+    </function>
+</flowgorithm>
