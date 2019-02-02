@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="a_vallorani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-01-24 10:48:52 AM"/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTktMDEtMjQ7MTA6NDA6MjAgQU07MzY4Mw=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTktMDEtMjQ7MTA6NDg6NTIgQU07MTszODA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prezzo" type="Real" array="False" size=""/>
+            <declare name="valuta" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci il prezzo da convertire:&quot;" newline="True"/>
+            <input variable="prezzo"/>
+            <output expression="&quot;Inserisci la valuta ($,&#163;)&quot;" newline="True"/>
+            <input variable="valuta"/>
+            <if expression="prezzo&gt;0">
+                <then>
+                    <if expression="valuta==&quot;$&quot;">
+                        <then>
+                            <assign variable="prezzo" expression="prezzo*0.88"/>
+                        </then>
+                        <else>
+                            <assign variable="prezzo" expression="prezzo*1.15"/>
+                        </else>
+                    </if>
+                    <output expression="prezzo &amp; &quot; &#8364;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Prezzo errato&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="a_vallorani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-01-24 11:08:31 AM"/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTktMDEtMjQ7MTA6NDg6NTQgQU07MzY5OA=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTktMDEtMjQ7MTE6MDg6MzEgQU07MTszNzk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Come ti chiami?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="nome &amp; &quot; come ti trovo bene oggi!&quot;" newline="True"/>
+            <output expression="&quot;Ciao &quot;&amp;nome&amp;&quot; oggi sei solare!!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
