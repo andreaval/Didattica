@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nascondere la riga di una tabella con JQuery</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            //tutto il codice JS inserito in questa funzione 
+            //viene eseguito solo dopo che la pagina è stata completamente caricata
+            $(function(){
+                aggiornaTot();
+            });
+            
+            //funzione per calcolare gli utenti della tabella
+            function aggiornaTot(){
+                var n=$('table tr:visible').length-1;
+                $('#tot').html('Utenti presenti: '+n);
+            }
+            
+            //funzione per eliminare una riga della tabella
+            function del(id){
+                var $riga = $('#'+id);
+                if($riga.length>0){
+                    if(confirm('Confermi la cancellazione dell\'utente?')){
+                        $riga.hide();
+                        aggiornaTot();
+                    }
+                }
+                return false;
+            }
+        </script>
+        <style>
+            a{cursor:pointer}
+        </style>
+    </head>
+    <body class="container">
+        <h1>Nascondere la riga di una tabella con JQuery</h1>
+        <div id="tot"></div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th><th>Cognome</th><th>Data di nascita</th><th></th>
+                </tr>
+            </thead>
+            <tr id="r1">
+                <td>Mario</td><td>Rossi</td><td>01/01/1960</td><td><a onclick="del('r1')"><i class="glyphicon glyphicon-remove"></i></a></td>
+            </tr>
+            <tr id="r2">
+                <td>Luigi</td><td>Verdi</td><td>01/01/1950</td><td><a onclick="del('r2')"><i class="glyphicon glyphicon-remove"></i></a></td>
+            </tr>
+            <tr id="r3">
+                <td>Carlo</td><td>Gialli</td><td>01/01/1970</td><td><a onclick="del('r3')"><i class="glyphicon glyphicon-remove"></i></a></td>
+            </tr>
+            <tr id="r4">
+                <td>Luigi</td><td>Verdi</td><td>01/01/1950</td><td><a onclick="del('r4')"><i class="glyphicon glyphicon-remove"></i></a></td>
+            </tr>
+            <tr id="r5">
+                <td>Carlo</td><td>Gialli</td><td>01/01/1970</td><td><a onclick="del('r5')"><i class="glyphicon glyphicon-remove"></i></a></td>
+            </tr>
+            <tr id="r6">
+                <td>Luigi</td><td>Verdi</td><td>01/01/1950</td><td><a onclick="del('r6')"><i class="glyphicon glyphicon-remove"></i></a></td>
+            </tr>
+            <tr id="r7">
+                <td>Carlo</td><td>Gialli</td><td>01/01/1970</td><td><a onclick="del('r7')"><i class="glyphicon glyphicon-remove"></i></a></td>
+            </tr>
+        </table>
+    </body>
+</html>
