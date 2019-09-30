@@ -2,8 +2,7 @@
  * Accortezza da utilizzare nell'uso del tipo float
  * Se una variabile float contiene un valore >=32 le ultime cifre decimali vengono approssimate con un errore
  * @author Andrea Vallorani
- * @version 1.0 23/01/2017
- */
+ * @version 1.0 23/01/2017 **/
 #include <stdio.h>
 
 int main(){
