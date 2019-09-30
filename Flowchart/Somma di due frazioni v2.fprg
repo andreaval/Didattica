@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Somma di due frazioni"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-12-14 12:48:04 AM"/>
+        <attribute name="created" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDMtMDY7MTI6NDY6NDYgUE07MzcxNQ=="/>
+        <attribute name="edited" value="YV92YWxsb3Jhbmk7bGludXgtc2VydmVyOzIwMTgtMDMtMDY7MDE6MTY6NTYgUE07MjszODIw"/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxODA0OzIwMTgtMTItMTQ7MTI6MzY6MzAgQU07MTthbmRyZWE7dWJ1bnR1OzIwMTgtMDEtMjM7MDU6MzE6MzEgUE07TWFzc2ltbyBDb211biBEaXZpc29yZSAoRXVjbGlkZSkuZnByZzs4NzA1"/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxODA0OzIwMTgtMTItMTQ7MTI6NDg6MDQgQU07NjsyNTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, d1, n2, d2, nS, dS" type="Integer" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="d1"/>
+            <input variable="n2"/>
+            <input variable="d2"/>
+            <assign variable="dS" expression="calcolamcm(d1,d2)"/>
+            <assign variable="nS" expression="(dS/d1*n1)+(dS/d2*n2)"/>
+            <call expression="semplifica(nS,dS)"/>
+        </body>
+    </function>
+    <function name="calcolaMCD" type="Integer" variable="A">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="R" type="Integer" array="False" size=""/>
+            <while expression="B!=0">
+                <assign variable="R" expression="A%B"/>
+                <assign variable="A" expression="B"/>
+                <assign variable="B" expression="R"/>
+            </while>
+        </body>
+    </function>
+    <function name="calcolamcm" type="Integer" variable="mcm">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="mcm" type="Integer" array="False" size=""/>
+            <assign variable="mcm" expression="A*B/calcolaMCD(A,B)"/>
+        </body>
+    </function>
+    <function name="semplifica" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+            <parameter name="d" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="MCD" type="Integer" array="False" size=""/>
+            <assign variable="MCD" expression="calcolaMCD(n,d)"/>
+            <assign variable="n" expression="n/MCD"/>
+            <assign variable="d" expression="d/MCD"/>
+            <if expression="n==d">
+                <then>
+                    <output expression="&quot;Risultato: &quot;&amp;n" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Risultato: &quot;&amp;n&amp;&quot;/&quot;&amp;d" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

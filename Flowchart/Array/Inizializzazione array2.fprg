@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Inizializzazione di un array"/>
+        <attribute name="authors" value="Andrea Vallorani"/>
+        <attribute name="about" value="v1"/>
+        <attribute name="saved" value="2018-09-22 05:17:52 PM"/>
+        <attribute name="created" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDktMjI7MDQ6MjU6MDEgUE07MjQ5Mw=="/>
+        <attribute name="edited" value="YW5kcmVhO01hdGUxNjA0OzIwMTgtMDktMjI7MDU6MTc6NTIgUE07MjsyNjEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="True" size="10"/>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <assign variable="I" expression="0"/>
+            <assign variable="N" expression="10"/>
+            <while expression="I&lt;N">
+                <if expression="I%2==0">
+                    <then>
+                        <assign variable="A[I]" expression="I"/>
+                    </then>
+                    <else>
+                        <assign variable="A[I]" expression="0"/>
+                    </else>
+                </if>
+                <assign variable="I" expression="I+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
